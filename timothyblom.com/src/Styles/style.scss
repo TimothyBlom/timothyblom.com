@@ -1,8 +1,43 @@
+@import "./header";
+@import "./variables";
+
 body {
     background-image: url("../Images/BackgroundNoAnim.jpg");
-    // background: red;
+    color: white;
+    background-size: 100%;
 }
 
-#Header {
-    background-color: seagreen;
+#navMenu {
+    color: white;
 }
+
+.artSheet {
+    width: 80%;
+    margin: 10%;
+}
+
+.miniIcon {
+    width: 10%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(75, 75, 75); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(39, 39, 39); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(29, 29, 29); 
+  }
