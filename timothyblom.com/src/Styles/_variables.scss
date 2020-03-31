@@ -1,5 +1,8 @@
-body {
-    background-image: url("../Images/BackgroundNoAnim.jpg");
-    // background: red;
-}
+$HeaderColor: rgba(180, 180, 180, 0.438);
 
+@mixin NavButtons {
+    text-decoration: none;
+    color: rgb(0, 255, 34);
+    text-align: center;
+    background-color: rgb(255, 0, 212);
+}

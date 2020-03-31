@@ -6,7 +6,7 @@ const Home = () => (
     <div>
       <h1>Home</h1>
       <img class='artSheet' src={templateImage} />
-      <p>Timothy's Portfolio Website</p>
+      <p>Welcon to my portfolio website</p>
       <br />
       <p>
         My name is Timothy Blom, and this is my portefolio website. 
@@ -14,7 +14,7 @@ const Home = () => (
       </p>
       <p>
         Thank you for visiting my website, I build this website to learn, to play with my new coding superpowers and to show off what I can create. 
-        This website is built with the following code
+        I build this website with the following code:
       </p>
       <div className='homeIcons'>
         <img class='miniIcon' src={htmlLogo} />

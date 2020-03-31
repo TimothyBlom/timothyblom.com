@@ -1,10 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import LogoSmall from "../Images/LogoSmall.png"
 
 const Header = () => {
     return (
         <div id='header'>
-            <button className='headerMainButtons'>Navigation Menu</button>
+            <div className='headerMainButtons' id='selectButton'>
+                <button />
+                <p>Select</p>
+            </div>
             <div id='navigationMenu'>
                 <Link className='navLink' to='/'>Home Page</Link>
                 <br />
@@ -12,16 +16,10 @@ const Header = () => {
                 <br />
                 <Link className='navLink' to='/dedicatedArt'>Dedicated Art</Link>
             </div>
-            <button className='headerMainButtons'>Options Menu</button>
-            <div id='optionsMenu'>
-                <button className='optionsButton'>Language</button>
-                <button className='optionsButton'>Text size</button>
-                <button className='optionsButton'>Text fond</button>
-                <button className='optionsButton'>Color style</button>
-                <button className='optionsButton'>Background</button>
-                <button className='optionsButton'>Graphics settings</button>
-                <button className='optionsButton'>Help</button>
-                <button className='optionsButton'>Credits</button>
+            <img className='logoSmall' src={LogoSmall} />
+            <div className='headerMainButtons' id='optionsButton'>
+                <button />
+                <p>Options</p>
             </div>
         </div>
     )
