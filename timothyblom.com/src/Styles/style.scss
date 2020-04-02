@@ -7,8 +7,10 @@ body {
     background-size: 100%;
 }
 
-#navMenu {
-    color: white;
+.logoFull {
+    position: fixed;
+    width: 200px;
+    bottom: 40px; 
 }
 
 .artSheet {
@@ -27,18 +29,17 @@ body {
 //below is for the scrollbar
 ::-webkit-scrollbar {
     width: 15px;
-}
-
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgb(75, 75, 75); 
-    border-radius: 10px;
-}
-   
-::-webkit-scrollbar-thumb {
-    background: rgb(39, 39, 39); 
-    border-radius: 10px;
-}
-  
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(29, 29, 29); 
+    &-track {
+        box-shadow: inset 0 0 5px rgb(75, 75, 75); 
+        border-radius: 10px;
+        background: rgb(172, 172, 172);
+    }
+    &-thumb {
+        background: rgb(39, 39, 39); 
+        border-radius: 10px;
+        box-shadow: inset -2px -2px 2px #313131, inset 2px 2px 2px #747474;
+        &:hover {
+            background: rgb(29, 29, 29); 
+        }
+    }
 }

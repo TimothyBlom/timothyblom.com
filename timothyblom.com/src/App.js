@@ -5,11 +5,13 @@ import Header from "./Components/Header";
 import AboutMe from "./Webpages/AboutMe";
 import Home from './Webpages/Home';
 import dedicatedArt from './Webpages/dedicatedArt';
+import MediaBars from "./Components/SocialmediaBars";
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
+      <MediaBars />
       <Route exact path='/' component={Home}/>
       <Route exact path='/AboutMe' component={AboutMe}/>
       <Route exact path='/dedicatedArt' component={dedicatedArt}/>

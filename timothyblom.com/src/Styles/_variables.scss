@@ -1,5 +1,6 @@
-body {
-    background-image: url("../Images/BackgroundNoAnim.jpg");
-    // background: red;
-}
+$BackgroundColor: rgba(180, 180, 180, 0.438);
+$ButtonBackground: rgba(0, 140, 255, 0.432);
 
+@mixin NavButtons {
+
+}

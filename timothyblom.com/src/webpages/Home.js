@@ -6,7 +6,7 @@ const Home = () => (
     <div>
       <h1>Home</h1>
       <img class='artSheet' src={templateImage} />
-      <p>Timothy's Portfolio Website</p>
+      <p>Welcome to my portfolio website</p>
       <br />
       <p>
         My name is Timothy Blom, and this is my portefolio website. 
