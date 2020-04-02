@@ -1,28 +1,37 @@
 #header {
   background-color: rgba(180, 180, 180, 0.438);
   margin: 1%;
-  border-radius: 10px;
+  margin-bottom: 150px;
 }
 
 .logoSmall {
   width: 150px;
-  display: inline-block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 #navigationMenu {
-  background-color: rgba(0, 0, 255, 0.295);
-  margin: 10px;
-  padding: 0;
+  background-color: rgba(180, 180, 180, 0.438);
   float: left;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
 }
 
 .navLink {
   text-decoration: none;
-  color: #00ff22;
+  color: white;
   text-align: center;
-  background-color: #ff00d4;
+  background-color: rgba(0, 140, 255, 0.432);
+  border-style: solid;
+  border-color: #0004ff;
+  float: left;
+  width: 100px;
+  margin: 5px;
+  border-radius: 10px;
 }
 
 #optionsButton {
@@ -77,11 +86,8 @@ body {
 
 .logoFull {
   position: fixed;
-  margin-top: 42%;
   width: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  bottom: 40px;
 }
 
 .artSheet {
