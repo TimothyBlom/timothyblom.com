@@ -1,33 +1,40 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import LogoSmall from "../Images/LogoSmall.png"
+import LogoFull from "../Images/LogoFull.png"
 
-const Header = () => {
+export default class Header extends Component {
+    state = {
+        on: false,
+    };
 
-function openMenu() {
-    document.getElementById('menu').classList.toggle('show');
-}
+    toggle = () => {
+        this.setState({
+            on: !this.state.on
+        });
+    };
 
-    return (
-        <div id='header'>
+    render(){
+        return (
+            <div id='header'>
                 <div className='headerMainButtons' id='selectButton'>
-                    <button />
+                    <button onClick={this.toggle}/>
                     <p>Select</p>
                 </div>
                 <div className='headerMainButtons' id='optionsButton'>
                     <button />
                     <p>Options</p>
                 </div>
-                <img className='logoSmall' src={LogoSmall} />
-            <div id='navigationMenu'>
-                <Link className='navLink' to='/'>Home Page</Link>
-                <br />
-                <Link className='navLink' to='/AboutMe'>About Me</Link>
-                <br />
-                <Link className='navLink' to='/dedicatedArt'>Dedicated Art</Link>
+                <img className='logoTop' src={LogoFull} />
+                {this.state.on &&
+                    <div id='navigationMenu'>
+                        <Link className='navLink' to='/'>Home Page</Link>
+                        <br />
+                        <Link className='navLink' to='/AboutMe'>About Me</Link>
+                        <br />
+                        <Link className='navLink' to='/dedicatedArt'>Dedicated Art</Link>
+                    </div>
+                }
             </div>
-        </div>
-    )
+        )
+    }
 };
-
-export default Header;

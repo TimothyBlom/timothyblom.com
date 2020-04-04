@@ -1,0 +1,1 @@
+header had width of 96% witch is not constand, otherwise the header will cramp up to the right becouse it is in a fixed position

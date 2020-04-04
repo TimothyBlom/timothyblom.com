@@ -1,16 +1,12 @@
 @import "./header";
 @import "./variables";
+@import "./mediaBars";
 
 body {
-    background-image: url("../Images/BackgroundNoAnim.jpg");
+    background-image: url("../Images/BackgroundNoAnim.jpg");    
     color: white;
     background-size: 100%;
-}
-
-.logoFull {
-    position: fixed;
-    width: 200px;
-    bottom: 40px; 
+    margin: 200px 10px 0 10px;
 }
 
 .artSheet {

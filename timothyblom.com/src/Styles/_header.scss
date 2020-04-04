@@ -1,52 +1,56 @@
 @import "./variables";
 
 #header {
-    background-color: $BackgroundColor;
-    margin: 1%;
-    margin-bottom: 150px;
+    margin: -175px 10px 100px 10px;
+    position: fixed;
+    width: 96%;
 }
 
-.logoSmall {
-    width: 150px;
+.logoTop {
+    height: 50px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 11px auto 11px auto;
 }
 
 //below is for the select/navigation menu slider
 #navigationMenu {
-    background-color: $BackgroundColor;
+    @include GlowBorder;
     float: left;
-    margin: 10px;
+    margin-left: 10px;
     display: flex;
     font-size: 15px;
     // display: none;
 }
 
 .navLink {
-    @include NavButtons;
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-align: center;
-    background-color: $ButtonBackground;
     border-style: solid;
     border-color: rgb(0, 4, 255);
     float: left;
     width: 100px;
     margin: 5px;
     border-radius: 10px;
+        &:hover {
+            background: $ButtonBackground;
+        }
 }
 
 //below is for the header buttons
 #optionsButton {
     float: right;
+    width: 60px;
 }
 
 #selectButton {
     float: left;
+    width: 60px;
 }
 
 .headerMainButtons {
+    @include GlowBorder;
+    padding: 10px;
     display: inline;
     text-align: center;
     margin: 10px 10px 10px 10px;

@@ -1,20 +1,39 @@
-#header {
-  background-color: rgba(180, 180, 180, 0.438);
-  margin: 1%;
-  margin-bottom: 150px;
+@-webkit-keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
-.logoSmall {
-  width: 150px;
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+#header {
+  margin: -175px 10px 100px 10px;
+  position: fixed;
+  width: 96%;
+}
+
+.logoTop {
+  height: 50px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 11px auto 11px auto;
 }
 
 #navigationMenu {
-  background-color: rgba(180, 180, 180, 0.438);
+  border: solid 1px white;
+  -webkit-box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
+          box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
   float: left;
-  margin: 10px;
+  margin-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,7 +44,6 @@
   text-decoration: none;
   color: white;
   text-align: center;
-  background-color: rgba(0, 140, 255, 0.432);
   border-style: solid;
   border-color: #0004ff;
   float: left;
@@ -34,15 +52,25 @@
   border-radius: 10px;
 }
 
+.navLink:hover {
+  background: rgba(0, 140, 255, 0.432);
+}
+
 #optionsButton {
   float: right;
+  width: 60px;
 }
 
 #selectButton {
   float: left;
+  width: 60px;
 }
 
 .headerMainButtons {
+  border: solid 1px white;
+  -webkit-box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
+          box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
+  padding: 10px;
   display: inline;
   text-align: center;
   margin: 10px 10px 10px 10px;
@@ -78,16 +106,100 @@
   outline: 0;
 }
 
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.mediaBars {
+  position: fixed;
+  bottom: 40px;
+  width: 200px;
+  right: -125px;
+}
+
+.socialMediaPicture {
+  width: 20px;
+}
+
+.socialMediaSingleBar {
+  list-style-type: none;
+  padding: 7px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+.mediaBarText {
+  padding-left: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.socialMediaSingleBar:hover {
+  -webkit-transform: translate(-120px);
+          transform: translate(-120px);
+}
+
+#githubBar {
+  background-color: #1b1b1b;
+}
+
+#artstationBar {
+  background-color: #00a2ff;
+}
+
+#linkedinBar {
+  background-color: #0051ff;
+}
+
+#emailBar {
+  background-color: #910000;
+}
+
+.logoFullButton {
+  position: fixed;
+  bottom: 40px;
+  margin-left: 5px;
+}
+
+.logoFullButton:hover > .logoFullText {
+  opacity: 1;
+  -webkit-animation: animated-text 0.5s steps(30, end) 0s 1 normal both;
+          animation: animated-text 0.5s steps(30, end) 0s 1 normal both;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.logoFull {
+  width: 200px;
+}
+
+.logoFullText {
+  font-size: 9px;
+  margin: -8px 0 2px 10px;
+  opacity: 0;
+}
+
 body {
   background-image: url("../Images/BackgroundNoAnim.jpg");
   color: white;
   background-size: 100%;
-}
-
-.logoFull {
-  position: fixed;
-  width: 200px;
-  bottom: 40px;
+  margin: 200px 10px 0 10px;
 }
 
 .artSheet {

@@ -1,6 +1,25 @@
 $BackgroundColor: rgba(180, 180, 180, 0.438);
 $ButtonBackground: rgba(0, 140, 255, 0.432);
+//socialmedia buttons
+$GithubColor: rgb(27, 27, 27);
+$ArtstationColor: rgb(0, 162, 255);
+$LinkedinColor: rgb(0, 81, 255);
+$EmailColor: rgb(145, 0, 0);
 
-@mixin NavButtons {
+// background: linear-gradient(135deg, transparent 10px, #c00 0) top left;                          //this code: background has straight cut corner
 
+@mixin GlowBorder {
+    border: solid 1px white;
+    box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
 }
+
+@mixin TypingAnimation {
+    animation: animated-text 0.5s steps(30, end) 0s 1 normal both;
+    white-space: nowrap;
+    overflow: hidden; 
+}
+
+@keyframes animated-text {
+    from{width: 0;}
+    to{width: 100%;}
+  }

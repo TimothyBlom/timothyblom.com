@@ -1,11 +1,11 @@
 import React from 'react';
-import templateImage from "../Images/BackgroundNoAnim.jpg"
+import templateSheet from "../Images/sheetTemplate.png"
 import htmlLogo from "../Images/htmlLogo.jpg"
 
 const Home = () => (
     <div>
       <h1>Home</h1>
-      <img class='artSheet' src={templateImage} />
+      <img class='artSheet' src={templateSheet} />
       <p>Welcome to my portfolio website</p>
       <br />
       <p>

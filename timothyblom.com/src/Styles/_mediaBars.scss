@@ -1,0 +1,68 @@
+@import "./variables";
+
+.mediaBars {
+    position: fixed;
+    bottom: 40px;
+    width: 200px;
+    right: -125px;
+}
+
+.socialMediaPicture {
+    width: 20px;
+}
+
+.socialMediaSingleBar {
+    list-style-type: none;
+    padding: 7px;
+    // transform: translate(880px);
+    transition-duration: 1s;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.mediaBarText {
+    padding-left: 15px;
+    text-decoration: none;
+    color: white;
+}
+  
+.socialMediaSingleBar:hover {
+    transform: translate(-120px);
+}
+
+#githubBar {
+    background-color: $GithubColor;
+}
+
+#artstationBar {
+    background-color: $ArtstationColor;
+}
+
+#linkedinBar {
+    background-color: $LinkedinColor;
+}
+
+#emailBar {
+    background-color: $EmailColor;
+}
+
+//below is for my full logo at the left bottom
+.logoFullButton {
+    position: fixed;
+    bottom: 40px; 
+    margin-left: 5px;
+        &:hover > .logoFullText {
+            opacity: 1;
+            @include TypingAnimation;
+        }
+}
+
+.logoFull {
+    width: 200px;
+}
+
+.logoFullText {
+    font-size: 9px;
+    margin: -8px 0 2px 10px;
+    opacity: 0;
+}
