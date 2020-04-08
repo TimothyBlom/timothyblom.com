@@ -1,0 +1,32 @@
+@import "./variables";
+
+#OptionsMenu {
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    bottom: 10%;
+    right: 10%;
+}
+
+.optionsButtonContainer {
+    @include GlowBorder;
+    margin: 15px auto 15px auto;
+    width: 400px;
+    padding: 10px;
+}
+
+.optionsMenuButton {
+    display: block;
+    margin: 5px auto 0px auto;
+    font-size: 20px;
+        &:hover ~ .explainText {
+        opacity: 1;
+        @include TypingAnimation;
+    }
+}
+
+.explainText {
+    margin: 0px 0 0px 5px;
+    font-size: 10px;
+    opacity: 0;
+}

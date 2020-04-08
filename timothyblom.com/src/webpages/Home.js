@@ -1,11 +1,11 @@
 import React from 'react';
-import templateSheet from "../Images/sheetTemplate.png"
 import htmlLogo from "../Images/htmlLogo.jpg"
+import Artslider from "../Components/ArtSlider"
 
 const Home = () => (
     <div>
       <h1>Home</h1>
-      <img class='artSheet' src={templateSheet} />
+      <Artslider />
       <p>Welcome to my portfolio website</p>
       <br />
       <p>

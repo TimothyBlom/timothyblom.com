@@ -1,15 +1,25 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import LogoFull from "../Images/LogoFull.png"
+import OptionsMenu from "./OptionsMenu"
+import LoadingIcon from "../Components/LoadingIcon"
 
 export default class Header extends Component {
     state = {
-        on: false,
+        Select: false,
+        Options: false,
     };
 
-    toggle = () => {
+    toggleSelect = () => {
         this.setState({
-            on: !this.state.on
+            Select: !this.state.Select,
+            Options: this.state.Options = false
+        });
+    };
+
+    toggleOptions = () => {
+        this.setState({
+            Options: !this.state.Options,
+            Select: this.state.Select = false
         });
     };
 
@@ -17,15 +27,15 @@ export default class Header extends Component {
         return (
             <div id='header'>
                 <div className='headerMainButtons' id='selectButton'>
-                    <button onClick={this.toggle}/>
+                    <button onClick={this.toggleSelect}/>
                     <p>Select</p>
                 </div>
                 <div className='headerMainButtons' id='optionsButton'>
-                    <button />
+                    <button onClick={this.toggleOptions}/>
                     <p>Options</p>
                 </div>
-                <img className='logoTop' src={LogoFull} />
-                {this.state.on &&
+                <LoadingIcon />
+                {this.state.Select &&
                     <div id='navigationMenu'>
                         <Link className='navLink' to='/'>Home Page</Link>
                         <br />
@@ -33,6 +43,9 @@ export default class Header extends Component {
                         <br />
                         <Link className='navLink' to='/dedicatedArt'>Dedicated Art</Link>
                     </div>
+                }
+                {this.state.Options &&
+                    <OptionsMenu />
                 }
             </div>
         )

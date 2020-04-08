@@ -1,0 +1,8 @@
+@import "./variables";
+
+.loadingIcon {
+    @include GlowBorder;
+    height: 50px;
+    display: block;
+    margin: 11px auto 11px auto;
+}

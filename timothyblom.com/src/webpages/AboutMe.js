@@ -6,7 +6,9 @@ const AboutMe = () => (
     <div>
       <h1>About Me</h1>
       <div id='aboutMeIntro'>
-        <img class='headshot' src={headshot} />
+        <h1>
+          Here a character sheet with skillz about me
+        </h1>
         <p>
           I am a Front End Developer and a 3D Artist. I live in the Netherlands in a little town called Heerhugowaard. 
           I spent most of my time playing video games, learning new code, making 3D art and coming up with new cool projects I am never gonna finish.
@@ -75,6 +77,9 @@ const AboutMe = () => (
           </div>
         </div>
       </div>
+      <h1>
+          Here my winc diploma and info about winc and my opinion about it (and contactinfo?)
+        </h1>
       <div id='contactTab'>
         <img class='headshot' src={headshot} />
         <p>
