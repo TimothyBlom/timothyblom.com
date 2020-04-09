@@ -10,19 +10,19 @@
 
 .optionsButtonContainer {
     @include GlowBorder;
-    margin: 15px auto 15px auto;
+    margin: 5px auto 0px auto;
     width: 400px;
-    padding: 10px;
+    padding: 5px;
+        &:hover .explainText {
+            opacity: 1;
+            @include TypingAnimation;
+        }
 }
 
 .optionsMenuButton {
     display: block;
     margin: 5px auto 0px auto;
     font-size: 20px;
-        &:hover ~ .explainText {
-        opacity: 1;
-        @include TypingAnimation;
-    }
 }
 
 .explainText {
@@ -30,3 +30,4 @@
     font-size: 10px;
     opacity: 0;
 }
+

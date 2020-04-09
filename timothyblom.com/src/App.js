@@ -6,6 +6,7 @@ import AboutMe from "./Webpages/AboutMe";
 import Home from './Webpages/Home';
 import dedicatedArt from './Webpages/dedicatedArt';
 import MediaBars from "./Components/SocialmediaBars";
+import BackgroundLines from "./Components/BackgroundLines";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route exact path='/' component={Home}/>
       <Route exact path='/AboutMe' component={AboutMe}/>
       <Route exact path='/dedicatedArt' component={dedicatedArt}/>
+      <BackgroundLines />
     </BrowserRouter>
   );
 }
