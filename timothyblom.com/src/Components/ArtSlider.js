@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
-import templateSheet from "../Images/sheetTemplate.png"
+import Landstalker1 from "../Images/LandstalkerSheet1.png"
+import Landstalker2 from "../Images/LandstalkerSheet2.jpg"
+import Landstalker3 from "../Images/LandstalkerSheet3.jpg"
+import Tank1 from "../Images/TankSheet1.jpg"
+import Toolcrate1 from "../Images/ToolcrateSheet1.jpg"
 
 export default class ArtSlider extends Component {
     render(){
@@ -14,28 +18,28 @@ export default class ArtSlider extends Component {
             <input type='radio' className='sliderRadioButtons' name='sliderRadioButton' id='sliderRadioButton5' />
 
             <div className='sliderArtSheetContainer' id='firstSheet'>
-                <img className='sliderArtSheet' src={templateSheet} />
+                <img className='sliderArtSheet' alt='' src={Landstalker1} />
             </div>
             <div className='sliderArtSheetContainer'>
-                <img className='sliderArtSheet' src={templateSheet} />
+                <img className='sliderArtSheet' alt='' src={Landstalker2} />
             </div>
             <div className='sliderArtSheetContainer'>
-                <img className='sliderArtSheet' src={templateSheet} />
+                <img className='sliderArtSheet' alt='' src={Landstalker3} />
             </div>
             <div className='sliderArtSheetContainer'>
-                <img className='sliderArtSheet' src={templateSheet} />
+                <img className='sliderArtSheet' alt='' src={Tank1} />
             </div>
             <div className='sliderArtSheetContainer'>
-                <img className='sliderArtSheet' src={templateSheet} />
+                <img className='sliderArtSheet' alt='' src={Toolcrate1} />
             </div>
         </div>
 
         <div className='sliderNav s1'>
-            <label className='sliderNavButton' for='sliderRadioButton1' />
-            <label className='sliderNavButton' for='sliderRadioButton2' />
-            <label className='sliderNavButton' for='sliderRadioButton3' />
-            <label className='sliderNavButton' for='sliderRadioButton4' />
-            <label className='sliderNavButton' for='sliderRadioButton5' />
+            <label className='sliderNavButton' htmlFor='sliderRadioButton1' />
+            <label className='sliderNavButton' htmlFor='sliderRadioButton2' />
+            <label className='sliderNavButton' htmlFor='sliderRadioButton3' />
+            <label className='sliderNavButton' htmlFor='sliderRadioButton4' />
+            <label className='sliderNavButton' htmlFor='sliderRadioButton5' />
         </div>
 
     </div>

@@ -12,6 +12,8 @@ $EmailColor: rgb(145, 0, 0);
 @mixin GlowBorder {
     border: solid 1px white;
     box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
+    // background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate-RGB 5s linear infinite;
 }
 
 @mixin TypingAnimation {
@@ -23,4 +25,13 @@ $EmailColor: rgb(145, 0, 0);
 @keyframes animated-text {
     from{width: 0;}
     to{width: 100%;}
+}
+
+@keyframes animate-RGB {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
 }
