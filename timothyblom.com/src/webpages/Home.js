@@ -11,8 +11,8 @@ import Artslider from "../Components/ArtSlider"
 
 const Home = () => (
     <div>
-      <div id='starWarsIntro'>
-        <p>the star wars like floating text intro</p>
+      <div className='headerPageName'>
+        <p>Home</p>
       </div>
       <Artslider />
       <div className='pageText'>

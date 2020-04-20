@@ -15,10 +15,10 @@ function App() {
       <Header />
       <MediaBars />
       <ScrollBar />
+      <BackgroundLines />
       <Route exact path='/' component={Home}/>
       <Route exact path='/AboutMe' component={AboutMe}/>
       <Route exact path='/dedicatedArt' component={dedicatedArt}/>
-      <BackgroundLines />
     </BrowserRouter>
   );
 }

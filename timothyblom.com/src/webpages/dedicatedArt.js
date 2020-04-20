@@ -7,13 +7,15 @@ import Toolcrate1 from "../Images/ToolcrateSheet1.jpg"
 
 const dedicatedArt = () => (
     <div>
-      <h1>Dedicated Art</h1>
+      <div className='headerPageName'>
+        <p>Dedicated Art</p>
+      </div>
       <div class='artHeader'>
-        <img class='artSheet' alt='' src={Landstalker1} />
+        <img class='headerArtSheet' alt='' src={Landstalker2} />
         <p className='artHeaderDescription'>
-        The Landstalker was a playable vehichle in the video game "Ratchet Deadlocked" for the Playstation 2, I loved it and could not resist recreating it. 
-        I plan on doing a High-Res version of it, when I have the time.
-      </p>
+          The Landstalker was a playable vehichle in the video game "Ratchet Deadlocked" 
+          for the Playstation 2, one of my all time favorite Sci-Fi vehichle. 
+        </p>
       </div>
       <img class='artSheet' alt='' src={Landstalker1} />
       <img class='artSheet' alt='' src={Landstalker2} />

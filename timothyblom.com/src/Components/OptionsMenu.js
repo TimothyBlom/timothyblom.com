@@ -119,68 +119,96 @@ export default class OptionsMenu extends Component {
     render(){
         return (
             <div id='OptionsMenu'>
-                <div id='languageButton' className='optionsButtonContainer'>
-                    <button className='optionsMenuButton' onClick={this.toggleLanguage}>Language</button>
+                <div className='optionsButtonContainer' onClick={this.toggleLanguage}>
+                    <p className='optionsMenuButton'>Language</p>
                     <p className='explainText'>Change the language on this website</p>
                 </div>
                 {this.state.Language &&
                     <p>test language</p>
                 }
 
-                <div id='fontButton' className='optionsButtonContainer'>
-                    <button className='optionsMenuButton' onClick={this.toggleFont}>Font</button>
+                <div className='optionsButtonContainer' onClick={this.toggleFont}>
+                    <p className='optionsMenuButton'>Font</p>
                     <p className='explainText'>Change the text font and size settings on this website</p>
                 </div>
                 {this.state.Font &&
                     <p>test font</p>
                 }
 
-                <div className='optionsButtonContainer'>
-                    <button className='optionsMenuButton' onClick={this.toggleUI}>UI</button>
+                <div className='optionsButtonContainer' onClick={this.toggleUI}>
+                    <p className='optionsMenuButton'>UI</p>
                     <p className='explainText'>Change the User Interface style on this website</p>
                 </div>
                 {this.state.UI &&
                     <p>test UI</p>
                 }
 
-                <div className='optionsButtonContainer'>
-                    <button className='optionsMenuButton' onClick={this.toggleBackground}>Background</button>
+                <div className='optionsButtonContainer' onClick={this.toggleBackground}>
+                    <p className='optionsMenuButton'>Background</p>
                     <p className='explainText'>Change the background on this website</p>
                 </div>
                 {this.state.Background &&
                     <p>test background</p>
                 }
 
-                <div className='optionsButtonContainer'>
-                    <button className='optionsMenuButton' onClick={this.toggleGraphics}>Graphics</button>
+                <div className='optionsButtonContainer' onClick={this.toggleGraphics}>
+                    <p className='optionsMenuButton'>Graphics</p>
                     <p className='explainText'>Change the graphics settings on this website</p>
                 </div>
                 {this.state.Graphics &&
                     <p>test graphics</p>
                 }
 
-                <div className='optionsButtonContainer'>
-                    <button className='optionsMenuButton' onClick={this.toggleCheatCodes}>Cheat Codes</button>
+                <div className='optionsButtonContainer' onClick={this.toggleCheatCodes}>
+                    <p className='optionsMenuButton'>Cheat Codes</p>
                     <p className='explainText'>unlock cheat codes and use them</p>
                 </div>
                 {this.state.CheatCodes &&
                     <p>test cheat codes</p>
                 }
 
-                <div className='optionsButtonContainer'>
-                    <button className='optionsMenuButton' onClick={this.toggleHelp}>Help</button>
+                <div className='optionsButtonContainer' onClick={this.toggleHelp}>
+                    <p className='optionsMenuButton'>Help</p>
                     <p className='explainText'>Learn usefull tips about navigating this website</p>
                 </div>
                 {this.state.Help &&
                     <p>test help</p>
                 }
 
-                <div className='optionsButtonContainer'>
-                    <button className='optionsMenuButton' onClick={this.toggleCredits}>Credits</button>
+                <div className='optionsButtonContainer' onClick={this.toggleCredits}>
+                    <p className='optionsMenuButton'>Credits</p>
                     <p className='explainText'>Play the credits</p>
                 </div>
                 {this.state.Credits &&
-                    <p>test credits</p>
+                    <div className='credits'>
+                        <div className='creditsTextContainer'>
+                            <p id='creditsHeader'>A Timothy Blom Website</p>
+                            <div id='creditsFunctions'>
+                                <p className='creditTexts'>Front-End Developer</p>
+                                <p className='creditTexts'>3D Artist</p>
+                                <p className='creditTexts'>2D Artist</p>
+                                <p className='creditTexts'>Designer</p>
+                                <p className='creditTexts'>Animator</p>
+                                <p className='creditTexts'>Director</p>
+                                <p className='creditTexts'>Assistant one</p>
+                                <p className='creditTexts'>Assistant two</p>
+                            </div>
+                            <div id='creditsNames'>
+                                <p className='creditTexts'>Timothy Blom</p>
+                                <p className='creditTexts'>Timothy Blom</p>
+                                <p className='creditTexts'>Timothy Blom</p>
+                                <p className='creditTexts'>Timothy Blom</p>
+                                <p className='creditTexts'>Timothy Blom</p>
+                                <p className='creditTexts'>Timothy Blom</p>
+                                <p className='creditTexts'>Timothy Blom's mom</p>
+                                <p className='creditTexts'>Timothy Blom's dad</p>
+                            </div>
+                            <p id='creditsFooter'>Special thanks to:</p>
+                        </div>
+                        <p className='endCreditsButton' onClick={this.toggleCredits}>
+                            End credits
+                        </p>
+                    </div>
                 }
 
             </div>

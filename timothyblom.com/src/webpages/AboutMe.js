@@ -22,21 +22,24 @@ import characterImg from "../Images/characterSheet.png"
 const AboutMe = () => (
     <div>
 
-      <h1>About Me</h1>
+      <div className='headerPageName'>
+        <p>About Me</p>
+      </div>
+
+      <div id='starWarsIntro'>
+        <p>the star wars like floating text intro</p>
+      </div>
 
       <div id='aboutMeIntro'>
-        <h1>
-          Here a character sheet with skillz about me
-        </h1>
-        <p>
-          I am a Front End Developer and a 3D Artist. I live in the Netherlands in a little town called Heerhugowaard. 
-          I spent most of my time playing video games, learning new code, making 3D art and coming up with new cool projects I am never gonna finish.
-        </p>
         <div id='characterSheet'>
           <div id='characterSheetImg'>
             <img id='characterImg' alt='' src={characterImg} />
           </div>
           <div id='characterSkills'>
+            <p>
+              I am a Front End Developer and a 3D Artist. I live in the Netherlands in a little town called Heerhugowaard. 
+              I spent most of my time playing video games, learning new code, making 3D art and coming up with new cool projects I am never gonna finish.
+            </p>
             <ul>
               <li>skill 1</li>
               <li>skill 2</li>
@@ -49,18 +52,16 @@ const AboutMe = () => (
       </div>
 
       <div id='mySoftwareSkills'>
-        <div id='mySoftwareSkillsHeader'>
+        <div id='mySoftwareSkillsText'>
           <p>
             My software skills include the following
           </p>
-        </div>
-        <div>
-          <p id='mySoftwareSkillsText'>
+          <p>
             I have experience with a lot of software, both for coding and 3D modeling. On top of that I am very familare with Photo editing software, espacialy Photoshop.
             I love creating stuff and making it look cool, and always try to learn new software to do that.
           </p>
         </div>
-        <div id='mySoftwareSkillsIcons'>
+        <div className='mySoftwareSkillsIcons'>
         <div className='homeIconDiv'>
             <img className='programIcon' alt='' src={htmlLogo} />
             <p className='iconName'> HTML5 </p>

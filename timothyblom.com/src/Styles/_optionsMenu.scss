@@ -2,7 +2,7 @@
 
 #OptionsMenu {
     position: fixed;
-    top: 20%;
+    top: 15%;
     left: 10%;
     bottom: 10%;
     right: 10%;
@@ -10,17 +10,22 @@
 
 .optionsButtonContainer {
     @include GlowBorder;
-    margin: 5px auto 0px auto;
+    margin: 40px auto 0px auto;
     width: 400px;
     padding: 5px;
-        &:hover .explainText {
-            opacity: 1;
-            @include TypingAnimation;
+        &:hover { 
+        background-color: rgba(128, 128, 128, 0.356);
+        cursor: pointer;
+            & .explainText {
+                opacity: 1;
+                @include TypingAnimation;
+            }
         }
 }
 
 .optionsMenuButton {
     display: block;
+    text-align: center;
     margin: 5px auto 0px auto;
     font-size: 20px;
 }
@@ -30,4 +35,3 @@
     font-size: 10px;
     opacity: 0;
 }
-
