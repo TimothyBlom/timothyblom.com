@@ -38,6 +38,24 @@
   }
 }
 
+@-webkit-keyframes credits {
+  0% {
+    top: 150%;
+  }
+  100% {
+    top: -250%;
+  }
+}
+
+@keyframes credits {
+  0% {
+    top: 150%;
+  }
+  100% {
+    top: -250%;
+  }
+}
+
 #header {
   z-index: 1;
   margin: -175px 0px 10px 0px;
@@ -149,6 +167,15 @@
   }
 }
 
+@keyframes credits {
+  0% {
+    top: 150%;
+  }
+  100% {
+    top: -250%;
+  }
+}
+
 @keyframes animated-text {
   from {
     width: 0;
@@ -166,6 +193,15 @@
   50% {
     -webkit-filter: hue-rotate(360deg);
             filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes credits {
+  0% {
+    top: 150%;
+  }
+  100% {
+    top: -250%;
   }
 }
 
@@ -260,6 +296,15 @@
   }
 }
 
+@keyframes credits {
+  0% {
+    top: 150%;
+  }
+  100% {
+    top: -250%;
+  }
+}
+
 #OptionsMenu {
   position: fixed;
   top: 15%;
@@ -325,6 +370,15 @@
   }
 }
 
+@keyframes credits {
+  0% {
+    top: 150%;
+  }
+  100% {
+    top: -250%;
+  }
+}
+
 .loadingIcon {
   border: solid 1px white;
   -webkit-box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
@@ -353,6 +407,15 @@
   50% {
     -webkit-filter: hue-rotate(360deg);
             filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes credits {
+  0% {
+    top: 150%;
+  }
+  100% {
+    top: -250%;
   }
 }
 
@@ -455,6 +518,15 @@
   }
 }
 
+@keyframes credits {
+  0% {
+    top: 150%;
+  }
+  100% {
+    top: -250%;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -540,6 +612,15 @@
   50% {
     -webkit-filter: hue-rotate(360deg);
             filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes credits {
+  0% {
+    top: 150%;
+  }
+  100% {
+    top: -250%;
   }
 }
 
@@ -738,9 +819,28 @@ body {
 }
 
 .creditsTextContainer {
+  position: relative;
+  -webkit-animation-name: credits;
+          animation-name: credits;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+#creditsFunctionAndNames {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.paused {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 #creditsNames {
@@ -770,8 +870,43 @@ body {
   cursor: pointer;
 }
 
+#pauzeCreditsButton {
+  border: solid 1px white;
+  -webkit-box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
+          box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
+  -webkit-animation: animate-RGB 5s linear infinite;
+          animation: animate-RGB 5s linear infinite;
+  padding: 10px;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+}
+
+#pauzeCreditsButton:hover {
+  background-color: rgba(131, 131, 131, 0.575);
+  cursor: pointer;
+}
+
 .creditTextMargin {
   margin: 150px;
   padding: 150px;
+}
+
+#creditsHeader {
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+#creditsFooterHeader {
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+#creditFooter {
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

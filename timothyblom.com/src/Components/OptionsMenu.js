@@ -117,6 +117,18 @@ export default class OptionsMenu extends Component {
     };
 
     render(){
+
+                            //pause button function below, doesn't work
+
+        // const creditsPauzeButton = document.getElementById('pauzeCreditsButton'),
+        //     creditsText = document.getElementById('creditsTextContainer');
+
+        // creditsPauzeButton.onClick = function() {
+        //     creditsText.classList.toggle('paused');
+        // };
+
+        // console.log('pauze button', creditsPauzeButton, creditsText)
+
         return (
             <div id='OptionsMenu'>
                 <div className='optionsButtonContainer' onClick={this.toggleLanguage}>
@@ -182,31 +194,43 @@ export default class OptionsMenu extends Component {
                 {this.state.Credits &&
                     <div className='credits'>
                         <div className='creditsTextContainer'>
-                            <p id='creditsHeader'>A Timothy Blom Website</p>
-                            <div id='creditsFunctions'>
-                                <p className='creditTexts'>Front-End Developer</p>
-                                <p className='creditTexts'>3D Artist</p>
-                                <p className='creditTexts'>2D Artist</p>
-                                <p className='creditTexts'>Designer</p>
-                                <p className='creditTexts'>Animator</p>
-                                <p className='creditTexts'>Director</p>
-                                <p className='creditTexts'>Assistant one</p>
-                                <p className='creditTexts'>Assistant two</p>
+                            <p id='creditsHeader'>A Website created by:</p>
+                            <div id='creditsFunctionAndNames'>
+                                <div id='creditsFunctions'>
+                                    <p className='creditTexts'>Front-End Developer</p>
+                                    <p className='creditTexts'>3D Artist</p>
+                                    <p className='creditTexts'>2D Artist</p>
+                                    <p className='creditTexts'>Designer</p>
+                                    <p className='creditTexts'>Animator</p>
+                                    <p className='creditTexts'>Director</p>
+                                    <p className='creditTexts'>Assistant one</p>
+                                    <p className='creditTexts'>Assistant two</p>
+                                </div>
+                                <div id='creditsNames'>
+                                    <p className='creditTexts'>Timothy Blom</p>
+                                    <p className='creditTexts'>Timothy Blom</p>
+                                    <p className='creditTexts'>Timothy Blom</p>
+                                    <p className='creditTexts'>Timothy Blom</p>
+                                    <p className='creditTexts'>Timothy Blom</p>
+                                    <p className='creditTexts'>Timothy Blom</p>
+                                    <p className='creditTexts'>Timothy Blom's mom</p>
+                                    <p className='creditTexts'>Timothy Blom's dad</p>
+                                </div>
                             </div>
-                            <div id='creditsNames'>
-                                <p className='creditTexts'>Timothy Blom</p>
-                                <p className='creditTexts'>Timothy Blom</p>
-                                <p className='creditTexts'>Timothy Blom</p>
-                                <p className='creditTexts'>Timothy Blom</p>
-                                <p className='creditTexts'>Timothy Blom</p>
-                                <p className='creditTexts'>Timothy Blom</p>
-                                <p className='creditTexts'>Timothy Blom's mom</p>
-                                <p className='creditTexts'>Timothy Blom's dad</p>
+                            <p id='creditsFooterHeader'>Special thanks to:</p>
+                            <div id='creditFooter'>
+                                <p>My teachers and classmates at Winc Academy.</p>
+                                <p>My parents, for unwillingly taking the role of my assistants.</p>
+                                <p>Everyone on Google, I would be hopelesslylost without it.</p>
+                                <p>Video Games, for keeping me sane.</p>
+                                <p>To the whole team, for exceptional teamwork and only a few conflicts.</p>
                             </div>
-                            <p id='creditsFooter'>Special thanks to:</p>
                         </div>
                         <p className='endCreditsButton' onClick={this.toggleCredits}>
                             End credits
+                        </p>
+                        <p id='pauzeCreditsButton'>
+                            pauze credits
                         </p>
                     </div>
                 }

@@ -189,7 +189,21 @@ body {
 }
 
 .creditsTextContainer {
+    position: relative;
+    animation-name: credits;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#creditsFunctionAndNames {
     display: flex;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.paused {
+    animation-play-state: paused;
 }
 
 #creditsNames {
@@ -214,7 +228,37 @@ body {
         }
 }
 
+#pauzeCreditsButton {
+    @include GlowBorder;
+    padding: 10px;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+        &:hover {
+            background-color: rgba(131, 131, 131, 0.575);
+            cursor: pointer;
+        }
+}
+
 .creditTextMargin {
     margin: 150px;
     padding: 150px;;
+}
+
+#creditsHeader {
+    font-size: $FontSizeHuge;
+    text-align: center;
+    width: 100%;
+}
+
+#creditsFooterHeader {
+    font-size: $FontSizeHuge;
+    text-align: center;
+    width: 100%;
+}
+
+#creditFooter {
+    font-size: $FontSizeMedium;
+    text-align: center;
+    width: 100%;
 }
