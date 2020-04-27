@@ -14,6 +14,7 @@ const Home = () => (
       <div className='headerPageName'>
         <p>Home</p>
       </div>
+        <p id='WIP'>This website is in early stages and a work in progress</p>
       <Artslider />
       <div className='pageText'>
         <p id='homeTextHeader'>Welcome to my portfolio website</p>
@@ -42,12 +43,12 @@ const Home = () => (
             <p className='iconName'> CSS3 </p>
           </div>
           <div className='homeIconDiv'>
-            <img className='programIcon'alt='' src={sassLogo} />
-            <p className='iconName'> SASS </p>
-          </div>
-          <div className='homeIconDiv'>
             <img className='programIcon'alt='' src={javascriptLogo} />
             <p className='iconName'> Javascript </p>
+          </div>
+          <div className='homeIconDiv'>
+            <img className='programIcon'alt='' src={sassLogo} />
+            <p className='iconName'> SASS </p>
           </div>
           <div className='homeIconDiv'>
             <img className='programIcon'alt='' src={reactLogo} />

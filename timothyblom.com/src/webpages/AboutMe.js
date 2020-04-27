@@ -1,5 +1,5 @@
 import React from 'react';
-import headshot from "../Images/headshot.jpg"
+import headshot from "../Images/headshot2.jpg"
 import htmlLogo from "../Images/htmlLogo.png"
 import cssLogo from "../Images/cssLogo.png"
 import javascriptLogo from "../Images/javascriptLogo.png"
@@ -7,6 +7,7 @@ import nodeLogo from "../Images/nodeLogo.png"
 import vscLogo from "../Images/vscLogo.png"
 import sassLogo from "../Images/sassLogo.png"
 import reactLogo from "../Images/reactLogo.png"
+import pythonLogo from "../Images/pythonLogo.png"
 import githubLogo from "../Images/gitLogo.png"
 import photoshopLogo from "../Images/photoshopLogo.png"
 import illustratorLogo from "../Images/illustratorLogo.png"
@@ -51,81 +52,87 @@ const AboutMe = () => (
         </div>
       </div>
 
-      <div id='mySoftwareSkills'>
-        <div id='mySoftwareSkillsText'>
-          <p>
-            My software skills include the following
-          </p>
-          <p>
-            I have experience with a lot of software, both for coding and 3D modeling. On top of that I am very familare with Photo editing software, espacialy Photoshop.
-            I love creating stuff and making it look cool, and always try to learn new software to do that.
-          </p>
-        </div>
-        <div className='mySoftwareSkillsIcons'>
-        <div className='homeIconDiv'>
-            <img className='programIcon' alt='' src={htmlLogo} />
-            <p className='iconName'> HTML5 </p>
+      <div id='mySoftwareSkillsContainer'>
+        <p id='mySoftwareSkillsHeader'>
+          My software skills include the following:
+        </p>
+        <div id='mySoftwareSkills'>
+          <div id='mySoftwareSkillsText'>
+            <p>
+              I have experience with a lot of software, both for coding and 3D modeling. On top of that I am very familare with Photo editing software, espacialy Photoshop.
+              I love creating stuff and making it look cool, and always try to learn new software to do that.
+            </p>
           </div>
-          <div className='homeIconDiv'>
-            <img className='programIcon' alt='' src={cssLogo} />
-            <p className='iconName'> CSS3 </p>
-          </div>
-          <div className='homeIconDiv'>
-            <img className='programIcon' alt='' src={sassLogo} />
-            <p className='iconName'> SASS </p>
-          </div>
-          <div className='homeIconDiv'>
-            <img className='programIcon' alt='' src={javascriptLogo} />
-            <p className='iconName'> Javascript </p>
-          </div>
-          <div className='homeIconDiv'>
-            <img className='programIcon' alt='' src={reactLogo} />
-            <p className='iconName'> Javascript React </p>
-          </div>
-          <div className='homeIconDiv'>
-            <img className='programIcon' alt='' src={vscLogo} />
-            <p className='iconName'> Visual Studio Code </p>
-          </div>
-          <div className='homeIconDiv'>
-            <img className='programIcon' alt='' src={nodeLogo} />
-            <p className='iconName'> Node.js </p>
-          </div>
-          <div className='homeIconDiv'>
-            <img className='programIcon' alt='' src={githubLogo} />
-            <p className='iconName'> Git </p>
-          </div>
-          <div className='homeIconDiv'>
-            <img className='programIcon' alt='' src={photoshopLogo} />
-            <p className='iconName'> Photoshop </p>
-          </div>
-          <div className='homeIconDiv'>
-            <img className='programIcon' alt='' src={illustratorLogo} />
-            <p className='iconName'> Illustrator </p>
-          </div>
-          <hr />
-          <div className='homeIconDiv'>
-            <img className='programIcon' alt='' src={dsMaxLogo} />
-            <p className='iconName'> 3Ds Studio Max </p>
-          </div>
-          <div className='homeIconDiv'>
-            <img className='programIcon' alt='' src={mayaLogo} />
-            <p className='iconName'> Maya </p>
-          </div>
-          <div className='homeIconDiv'>
-            <img className='programIcon' alt='' src={cinema4dLogo} />
-            <p className='iconName'> Cinema 4D </p>
-          </div>
-          <div className='homeIconDiv'>
-            <img className='programIcon' alt='' src={substancePainterLogo} />
-            <p className='iconName'> Substance Painter </p>
-          </div>
-          <div className='homeIconDiv'>
-            <img className='programIcon' alt='' src={unityLogo} />
-            <p className='iconName'> Unity </p>
-          </div>
-          <div className='homeIconDiv'>
-            <img className='programIcon' alt='' src={unrealEngine4Logo} />
-            <p className='iconName'> Unreal Engine 4 </p>
+          <div className='mySoftwareSkillsIcons'>
+            <div className='homeIconDiv'>
+              <img className='programIcon' alt='' src={htmlLogo} />
+              <p className='iconName'> HTML5 </p>
+            </div>
+            <div className='homeIconDiv'>
+              <img className='programIcon' alt='' src={cssLogo} />
+              <p className='iconName'> CSS3 </p>
+            </div>
+            <div className='homeIconDiv'>
+              <img className='programIcon' alt='' src={javascriptLogo} />
+              <p className='iconName'> Javascript </p>
+            </div>
+            <div className='homeIconDiv'>
+              <img className='programIcon' alt='' src={pythonLogo} />
+              <p className='iconName'> Python </p>
+            </div>
+            <div className='homeIconDiv'>
+              <img className='programIcon' alt='' src={sassLogo} />
+              <p className='iconName'> SASS </p>
+            </div>
+            <div className='homeIconDiv'>
+              <img className='programIcon' alt='' src={reactLogo} />
+              <p className='iconName'> Javascript React </p>
+            </div>
+            <div className='homeIconDiv'>
+              <img className='programIcon' alt='' src={vscLogo} />
+              <p className='iconName'> Visual Studio Code </p>
+            </div>
+            <div className='homeIconDiv'>
+              <img className='programIcon' alt='' src={nodeLogo} />
+              <p className='iconName'> Node.js </p>
+            </div>
+            <div className='homeIconDiv'>
+              <img className='programIcon' alt='' src={githubLogo} />
+              <p className='iconName'> Git </p>
+            </div>
+            <div className='homeIconDiv'>
+              <img className='programIcon' alt='' src={photoshopLogo} />
+              <p className='iconName'> Photoshop </p>
+            </div>
+            <div className='homeIconDiv'>
+              <img className='programIcon' alt='' src={illustratorLogo} />
+              <p className='iconName'> Illustrator </p>
+            </div>
+            {/* <hr /> */}
+            <div className='homeIconDiv'>
+              <img className='programIcon' alt='' src={dsMaxLogo} />
+              <p className='iconName'> 3Ds Studio Max </p>
+            </div>
+            <div className='homeIconDiv'>
+              <img className='programIcon' alt='' src={mayaLogo} />
+              <p className='iconName'> Maya </p>
+            </div>
+            <div className='homeIconDiv'>
+              <img className='programIcon' alt='' src={cinema4dLogo} />
+              <p className='iconName'> Cinema 4D </p>
+            </div>
+            <div className='homeIconDiv'>
+              <img className='programIcon' alt='' src={substancePainterLogo} />
+              <p className='iconName'> Substance Painter </p>
+            </div>
+            <div className='homeIconDiv'>
+              <img className='programIcon' alt='' src={unityLogo} />
+              <p className='iconName'> Unity </p>
+            </div>
+            <div className='homeIconDiv'>
+              <img className='programIcon' alt='' src={unrealEngine4Logo} />
+              <p className='iconName'> Unreal Engine 4 </p>
+            </div>
           </div>
         </div>
       </div>

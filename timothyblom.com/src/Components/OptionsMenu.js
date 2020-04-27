@@ -118,7 +118,7 @@ export default class OptionsMenu extends Component {
 
     render(){
 
-                            //pause button function below, doesn't work
+                            // pause button function below, doesn't work
 
         // const creditsPauzeButton = document.getElementById('pauzeCreditsButton'),
         //     creditsText = document.getElementById('creditsTextContainer');
@@ -131,7 +131,7 @@ export default class OptionsMenu extends Component {
 
         return (
             <div id='OptionsMenu'>
-                <div className='optionsButtonContainer' onClick={this.toggleLanguage}>
+                <div className='optionsButtonContainer' id='languageButton' onClick={this.toggleLanguage}>
                     <p className='optionsMenuButton'>Language</p>
                     <p className='explainText'>Change the language on this website</p>
                 </div>
