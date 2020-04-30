@@ -16,7 +16,7 @@ const Home = () => (
       </div>
         {/* <p id='WIP'>This website is in early stages and a work in progress</p> */}
       <Artslider />
-      <div className='pageText'>
+      <div className='homePageText'>
         <p id='homeTextHeader'>Welcome to my portfolio website</p>
         <br />
         <p className='homeTextContent'>
@@ -28,6 +28,15 @@ const Home = () => (
         <p className='homeTextContent'>
           Thank you for visiting my website. I build this website to learn, to play with my new coding superpowers and to show off what I can create. 
         </p>
+        <p>
+          To do on this website:
+        </p>
+        <ul>
+          <li>options menu</li>
+          <li>visit other pages</li>
+          <li>find all gold bolts for a reward</li>
+          <li>visit my social media pages</li>
+        </ul>
         <p>
           
         </p>

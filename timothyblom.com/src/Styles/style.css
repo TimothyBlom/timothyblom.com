@@ -321,6 +321,7 @@
 }
 
 #OptionsMenu {
+  z-index: auto;
   position: fixed;
   top: 15%;
   left: 10%;
@@ -785,15 +786,6 @@ body {
   padding-bottom: 30px;
 }
 
-#WIP {
-  text-align: center;
-  font-size: 50px;
-  margin: 150px 0 150px 0;
-  padding: 20px;
-  border: solid 25px yellow;
-  background: black;
-}
-
 .headerPageName {
   z-index: 1;
   position: fixed;
@@ -801,9 +793,10 @@ body {
   opacity: 0.5;
   margin-top: -200px;
   margin-left: 150px;
+  height: 0px;
 }
 
-.pageText {
+.homePageText {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   padding: 20px 50px 20px 50px;
