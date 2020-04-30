@@ -39,14 +39,19 @@ const AboutMe = () => (
           <div id='characterSkills'>
             <p>
               I am a Front End Developer and a 3D Artist. I live in the Netherlands in a little town called Heerhugowaard. 
-              I spent most of my time playing video games, learning new code, making 3D art and coming up with new cool projects I am never gonna finish.
+              I spent most of my time playing video games, learning new code, making 3D art and coming up with new cool projects I never end up finishing.
             </p>
             <ul>
-              <li>skill 1</li>
-              <li>skill 2</li>
-              <li>skill 3</li>
-              <li>skill 4</li>
-              <li>skill 5</li>
+              <li>Name: Tim</li>
+              <li>Born: November 1996</li>
+              <li>Current living location: Heerhugowaard, Netherlands, Earth</li>
+              <li>Front-End skill:</li>
+              <li>Creativity:</li>
+              <li>3D modeling:</li>
+              <li>Google solutions:</li>
+              <li>Hand to hand combad:</li>
+              <li>streanght:</li>
+              <li>Weakness: </li>
             </ul>
           </div>
         </div>
@@ -98,7 +103,7 @@ const AboutMe = () => (
             </div>
             <div className='homeIconDiv'>
               <img className='programIcon' alt='' src={githubLogo} />
-              <p className='iconName'> Git </p>
+              <p className='iconName'> Git (Hub) </p>
             </div>
             <div className='homeIconDiv'>
               <img className='programIcon' alt='' src={photoshopLogo} />

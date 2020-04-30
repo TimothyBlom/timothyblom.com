@@ -14,19 +14,22 @@ const Home = () => (
       <div className='headerPageName'>
         <p>Home</p>
       </div>
-        <p id='WIP'>This website is in early stages and a work in progress</p>
+        {/* <p id='WIP'>This website is in early stages and a work in progress</p> */}
       <Artslider />
       <div className='pageText'>
         <p id='homeTextHeader'>Welcome to my portfolio website</p>
         <br />
-        <p>
-          My name is Timothy Blom, and this is my portefolio website. 
+        <p className='homeTextContent'>
+          My name is Timothy Blom, and this is my portfolio website. 
           <br />
           Feel free to look arround, use the Navigation menu in the top left to go to other pages or play with the settings in the Options menu on the top right.
           You can also use the social media buttons on the bottom right to visit my social media pages.
         </p>
-        <p>
+        <p className='homeTextContent'>
           Thank you for visiting my website. I build this website to learn, to play with my new coding superpowers and to show off what I can create. 
+        </p>
+        <p>
+          
         </p>
       </div>
       <div className='homeFooter'>
@@ -64,7 +67,7 @@ const Home = () => (
           </div>
           <div className='homeIconDiv'>
             <img className='programIcon'alt='' src={githubLogo} />
-            <p className='iconName'> Git </p>
+            <p className='iconName'> Git (Hub) </p>
           </div>
         </div>
         </div>

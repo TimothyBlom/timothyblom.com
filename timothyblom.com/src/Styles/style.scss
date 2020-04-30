@@ -13,7 +13,8 @@
 }
 
 body {
-    background-image: url("../Images/BackgroundNoAnim2.jpg"); 
+    // background-image: url("../Images/BackgroundNoAnim2.jpg"); 
+    background: linear-gradient(90deg, rgb(75, 75, 75) 0%, rgb(15, 15, 15) 100%);
     color: white;
     background-size: 100%;
     margin: 200px 10px 0 10px;
@@ -32,6 +33,7 @@ body {
 }
 
 .headerPageName {
+    z-index: 1;
     position: fixed;
     font-size: 35px;
     opacity: 0.5;
@@ -39,30 +41,28 @@ body {
     margin-left: 150px;
 }
 
-#starWarsIntro {
-    border: solid rgb(4, 0, 255) 5px;
-    height: 650px;
-    padding: 20px 50px 20px 50px;
-    margin: 0px 10% 150px 10%;
-}
-
 .pageText {
-    background: $ButtonBackground;
+    backdrop-filter: blur(5px);
     padding: 20px 50px 20px 50px;
     margin: 100px 10% 20px 10%;
 }
 
 #homeTextHeader {
-    font-size: 35px;
+    font-size: 75px;
     margin: 0;
     text-align: center;
 }
 
+.homeTextContent {
+    font-size: 25px;
+}
+
 .homeFooter {
-    background: $ButtonBackground;
+    backdrop-filter: blur(5px);
     padding: 10px;
     padding-bottom: 40px;
     margin: 3% 0 0 0;
+    font-size: 25px;
 }
 
 .homeIconsContainer {
@@ -100,14 +100,23 @@ body {
 }
 
 //about me page
+#starWarsIntro {
+    border: solid rgb(0, 0, 0) 5px;
+    height: 650px;
+    padding: 20px 50px 20px 50px;
+    margin: 0px 10% 150px 10%;
+}
+
 #aboutMeIntro {
-    background: $ButtonBackground;
+    backdrop-filter: blur(5px);
     padding: 20px 50px 20px 50px;
     margin: 100px 10% 20px 10%;
 }
 
 #characterImg {
-    width: 500px;
+    height: 1000px;
+    margin-right: 100px;
+    @include GlowBorder;
 }
 
 #characterSkills {
@@ -120,7 +129,7 @@ body {
 }
 
 #mySoftwareSkillsContainer {
-    background: $ButtonBackground;
+    backdrop-filter: blur(5px);
     padding: 20px 50px 40px 50px;
     margin: 100px 10% 20px 10%;
 }
@@ -159,7 +168,7 @@ body {
 }
 
 #aboutMeFooter {
-    background: $ButtonBackground;
+    backdrop-filter: blur(5px);
     font-size: $FontSizeBig;
     padding: 10px;
     display: flex;
@@ -173,7 +182,7 @@ body {
 
 //dedicated art page
 .artHeader {
-    background: $ButtonBackground;
+    backdrop-filter: blur(5px);
     margin: 0px 20% 20px 20%;
     padding: 10px;
 }
@@ -189,101 +198,4 @@ body {
 .artSheet {
     width: 70%;
     margin: 5% 15% 5% 15%;
-}
-
-
-
-
-
-.credits {
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.781);
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#creditsFunctions {
-    font-size: $FontSizeBig;
-    width: 50%;
-    text-align: right;
-    margin: 50px;
-}
-
-.creditsTextContainer {
-    position: relative;
-    animation-name: credits;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-#creditsFunctionAndNames {
-    display: flex;
-    margin-top: 150px;
-    margin-bottom: 150px;
-}
-
-.paused {
-    animation-play-state: paused;
-}
-
-#creditsNames {
-    font-size: $FontSizeBig;
-    width: 50%;
-    margin: 50px;
-}
-
-.creditTexts {
-    margin-top: 75px;
-}
-
-.endCreditsButton {
-    @include GlowBorder;
-    padding: 10px;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-        &:hover {
-            background-color: rgba(131, 131, 131, 0.575);
-            cursor: pointer;
-        }
-}
-
-#pauzeCreditsButton {
-    @include GlowBorder;
-    padding: 10px;
-    position: fixed;
-    left: 20px;
-    bottom: 20px;
-        &:hover {
-            background-color: rgba(131, 131, 131, 0.575);
-            cursor: pointer;
-        }
-}
-
-.creditTextMargin {
-    margin: 150px;
-    padding: 150px;;
-}
-
-#creditsHeader {
-    font-size: $FontSizeHuge;
-    text-align: center;
-    width: 100%;
-}
-
-#creditsFooterHeader {
-    font-size: $FontSizeHuge;
-    text-align: center;
-    width: 100%;
-}
-
-#creditFooter {
-    font-size: $FontSizeMedium;
-    text-align: center;
-    width: 100%;
 }

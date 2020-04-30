@@ -1,11 +1,17 @@
 @import "./variables";
 
+.artsliderContainer {
+    padding-bottom: 20%;
+    overflow: hidden;
+}
+
 .artSlider {
     width: 65%;
     overflow: hidden;
     position: relative;
     left: 50%;
     transform: translate(-50%);
+    margin-top: 15%;
 }
 
 .sliderNav {
@@ -40,8 +46,21 @@
     display: flex;
 }
 
+.backgroundSlides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+}
+
 .sliderArtSheetContainer {
     width: 20%;
+    transition: 0.5s ease-in-out;
+}
+
+.backgroundSliderArtSheetContainer {
+    width: 20%;
+    filter: blur(10px);
     transition: 0.5s ease-in-out;
 }
 

@@ -1,6 +1,7 @@
 @import "./variables";
 
 .mediaBars {
+    z-index: 1;
     position: fixed;
     bottom: 40px;
     width: 200px;
@@ -47,6 +48,7 @@
 
 //below is for my full logo at the left bottom
 .logoFullButton {
+    z-index: 1;
     position: fixed;
     bottom: 40px; 
     margin-left: 5px;
