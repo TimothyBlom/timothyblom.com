@@ -14,13 +14,15 @@ const Home = () => (
       <div className='headerPageName'>
         <p>Home</p>
       </div>
-        {/* <p id='WIP'>This website is in early stages and a work in progress</p> */}
       <Artslider />
       <div className='homePageText'>
-        <p id='homeTextHeader'>Welcome to my portfolio website</p>
+      <p className='backgroundDivTitles' data-aos="fade-up">Welcome</p>
+        <p id='homeTextHeader'>
+          Welcome to my portfolio website
+        </p>
         <br />
         <p className='homeTextContent'>
-          My name is Timothy Blom, and this is my portfolio website. 
+          I am Tim Blom, and this is my portfolio website. 
           <br />
           Feel free to look arround, use the Navigation menu in the top left to go to other pages or play with the settings in the Options menu on the top right.
           You can also use the social media buttons on the bottom right to visit my social media pages.

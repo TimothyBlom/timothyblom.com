@@ -10,21 +10,23 @@ export default class ArtSlider extends Component {
         return (
             <div className='artsliderContainer'>
 
-                <div className='backgroundSlides'>
-                    <div className='backgroundSliderArtSheetContainer' id='backgroundFirstSheet'>
-                        <img className='sliderArtSheet' alt='' src={Landstalker1} />
-                    </div>
-                    <div className='backgroundSliderArtSheetContainer'>
-                        <img className='sliderArtSheet' alt='' src={Landstalker2} />
-                    </div>
-                    <div className='backgroundSliderArtSheetContainer'>
-                        <img className='sliderArtSheet' alt='' src={Landstalker3} />
-                    </div>
-                    <div className='backgroundSliderArtSheetContainer'>
-                        <img className='sliderArtSheet' alt='' src={Tank1} />
-                    </div>
-                    <div className='backgroundSliderArtSheetContainer'>
-                        <img className='sliderArtSheet' alt='' src={Toolcrate1} />
+                <div className='backgroundArtSlider'>
+                    <div className='backgroundSlides'>
+                        <div className='backgroundSliderArtSheetContainer' id='backgroundFirstSheet'>
+                            <img className='sliderArtSheet' alt='' src={Landstalker1} />
+                        </div>
+                        <div className='backgroundSliderArtSheetContainer'>
+                            <img className='sliderArtSheet' alt='' src={Landstalker2} />
+                        </div>
+                        <div className='backgroundSliderArtSheetContainer'>
+                            <img className='sliderArtSheet' alt='' src={Landstalker3} />
+                        </div>
+                        <div className='backgroundSliderArtSheetContainer'>
+                            <img className='sliderArtSheet' alt='' src={Tank1} />
+                        </div>
+                        <div className='backgroundSliderArtSheetContainer'>
+                            <img className='sliderArtSheet' alt='' src={Toolcrate1} />
+                        </div>
                     </div>
                 </div>
 

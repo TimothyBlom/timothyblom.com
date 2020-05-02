@@ -13,6 +13,12 @@ $FontSizeHuge: 40px;
 
 // background: linear-gradient(135deg, transparent 10px, #c00 0) top left;                          //this code: background has straight cut corner
 
+@mixin divBackground {
+    backdrop-filter: blur(5px);
+    background-color: rgba(43, 43, 43, 0.075);
+    box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
+}
+
 @mixin GlowBorder {
     border: solid 1px white;
     box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;

@@ -25,28 +25,30 @@ export default class Header extends Component {
 
     render(){
         return (
-            <div id='header'>
-                <div className='headerMainButtons' id='selectButton'>
-                    <button onClick={this.toggleSelect}/>
-                    <p>Select</p>
-                </div>
-                <div className='headerMainButtons' id='optionsButton'>
-                    <button onClick={this.toggleOptions}/>
-                    <p>Options</p>
-                </div>
-                <LoadingIcon />
-                {this.state.Select &&
-                    <div id='navigationMenu'>
-                        <Link className='navLink' to='/'>Home Page</Link>
-                        <br />
-                        <Link className='navLink' to='/AboutMe'>About Me</Link>
-                        <br />
-                        <Link className='navLink' to='/dedicatedArt'>Dedicated Art</Link>
-                    </div>
-                }
+            <div>
                 {this.state.Options &&
                     <OptionsMenu />
                 }
+                <div id='header'>
+                    <div className='headerMainButtons' id='selectButton'>
+                        <button onClick={this.toggleSelect}/>
+                        <p>Select</p>
+                    </div>
+                    <div className='headerMainButtons' id='optionsButton'>
+                        <button onClick={this.toggleOptions}/>
+                        <p>Options</p>
+                    </div>
+                    <LoadingIcon />
+                    {this.state.Select &&
+                        <div id='navigationMenu'>
+                            <Link className='navLink' to='/Home'>Home Page</Link>
+                            <br />
+                            <Link className='navLink' to='/AboutMe'>About Me</Link>
+                            <br />
+                            <Link className='navLink' to='/dedicatedArt'>Dedicated Art</Link>
+                        </div>
+                    }
+                </div>
             </div>
         )
     }

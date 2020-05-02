@@ -12,6 +12,7 @@ export default class OptionsMenu extends Component {
         Credits: false,
     };
 
+    //the toggle functions bellow are not very dry, there should be a shorter way
     toggleLanguage = () => {
         this.setState({
             Language: !this.state.Language,
@@ -118,7 +119,7 @@ export default class OptionsMenu extends Component {
 
     render(){
 
-                            // pause button function below, doesn't work
+                            // pause button in credits function below, doesn't work
 
         // const creditsPauzeButton = document.getElementById('pauzeCreditsButton'),
         //     creditsText = document.getElementById('creditsTextContainer');
@@ -130,7 +131,8 @@ export default class OptionsMenu extends Component {
         // console.log('pauze button', creditsPauzeButton, creditsText)
 
         return (
-            <div id="blurBackground">
+            <div>
+            <div id="blurBackground" />
                 <div id='OptionsMenu'>
                     <div className='optionsButtonContainer' id='languageButton' onClick={this.toggleLanguage}>
                         <p className='optionsMenuButton'>Language</p>
@@ -237,7 +239,6 @@ export default class OptionsMenu extends Component {
                     }
                 </div>
             </div>
-            
         )
     }
 };

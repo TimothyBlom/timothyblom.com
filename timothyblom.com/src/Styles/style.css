@@ -318,10 +318,11 @@
   bottom: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 
 #OptionsMenu {
-  z-index: auto;
+  z-index: 1;
   position: fixed;
   top: 15%;
   left: 10%;
@@ -549,7 +550,6 @@
 
 .artsliderContainer {
   padding-bottom: 20%;
-  overflow: hidden;
 }
 
 .artSlider {
@@ -559,7 +559,13 @@
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  margin-top: 15%;
+}
+
+.backgroundArtSlider {
+  margin-top: -200px;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
 }
 
 .sliderNav {
@@ -607,7 +613,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
 }
 
 .sliderArtSheetContainer {
@@ -626,11 +631,14 @@
 
 .sliderArtSheet {
   width: 100%;
-  height: 100%;
 }
 
 #sliderRadioButton1:checked ~ #firstSheet {
   margin-left: 0%;
+}
+
+#sliderRadioButton2:checked ~ #backgroundFirstSheet {
+  margin-left: -20%;
 }
 
 #sliderRadioButton2:checked ~ #firstSheet {
@@ -778,8 +786,8 @@
 }
 
 body {
-  background: -webkit-gradient(linear, left top, right top, from(#4b4b4b), to(#0f0f0f));
-  background: linear-gradient(90deg, #4b4b4b 0%, #0f0f0f 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#0d2f5c), to(#0f0f0f));
+  background: linear-gradient(90deg, #0d2f5c 0%, #0f0f0f 100%);
   color: white;
   background-size: 100%;
   margin: 200px 10px 0 10px;
@@ -796,9 +804,33 @@ body {
   height: 0px;
 }
 
+.backgroundDivTitles {
+  position: absolute;
+  font-size: 300px;
+  color: rgba(173, 173, 173, 0.151);
+  margin-top: -15%;
+}
+
+.introPage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1d1d1d;
+  z-index: 2;
+}
+
+#introContinueButton {
+  text-align: center;
+}
+
 .homePageText {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  background-color: rgba(43, 43, 43, 0.075);
+  -webkit-box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
+          box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
   padding: 20px 50px 20px 50px;
   margin: 100px 10% 20px 10%;
 }
@@ -816,6 +848,9 @@ body {
 .homeFooter {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  background-color: rgba(43, 43, 43, 0.075);
+  -webkit-box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
+          box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
   padding: 10px;
   padding-bottom: 40px;
   margin: 3% 0 0 0;
@@ -868,18 +903,21 @@ body {
   border: solid black 5px;
   height: 650px;
   padding: 20px 50px 20px 50px;
-  margin: 0px 10% 150px 10%;
+  margin: 0 10% 20% 10%;
 }
 
 #aboutMeIntro {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  background-color: rgba(43, 43, 43, 0.075);
+  -webkit-box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
+          box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
   padding: 20px 50px 20px 50px;
-  margin: 100px 10% 20px 10%;
+  margin: 0 10% 20% 10%;
 }
 
 #characterImg {
-  height: 1000px;
+  height: 900px;
   margin-right: 100px;
   border: solid 1px white;
   -webkit-box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
@@ -893,6 +931,13 @@ body {
   font-size: 30px;
 }
 
+.skillsBar {
+  background-color: #747474;
+  width: 600px;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
 #characterSheet {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -902,8 +947,11 @@ body {
 #mySoftwareSkillsContainer {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  background-color: rgba(43, 43, 43, 0.075);
+  -webkit-box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
+          box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
   padding: 20px 50px 40px 50px;
-  margin: 100px 10% 20px 10%;
+  margin: 0 10% 20% 10%;
 }
 
 #mySoftwareSkills {
@@ -933,12 +981,16 @@ body {
 
 .homeIconDiv {
   padding: 20px;
-  margin: 20px;
+  margin: 10px;
+}
+
+.diplomaContainer {
+  margin: 0 10% 20% 10%;
 }
 
 .wincDiploma {
-  width: 30%;
-  margin: 50px 35% 50px 35%;
+  width: 40%;
+  margin-left: 30%;
   border: solid gold 5px;
   -webkit-box-shadow: 0px 0px 10px 5px #ffd900;
           box-shadow: 0px 0px 10px 5px #ffd900;
@@ -947,6 +999,9 @@ body {
 #aboutMeFooter {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  background-color: rgba(43, 43, 43, 0.075);
+  -webkit-box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
+          box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
   font-size: 30px;
   padding: 10px;
   display: -webkit-box;
@@ -963,6 +1018,9 @@ body {
 .artHeader {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  background-color: rgba(43, 43, 43, 0.075);
+  -webkit-box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
+          box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
   margin: 0px 20% 20px 20%;
   padding: 10px;
 }

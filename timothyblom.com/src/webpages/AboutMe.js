@@ -20,7 +20,8 @@ import unrealEngine4Logo from "../Images/unrealEngine4Logo.png"
 import wincDiploma from "../Images/WincDiplomaTimothyBlom.png"
 import characterImg from "../Images/characterSheet.png"
 
-const AboutMe = () => (
+const AboutMe = () => {
+    return(
     <div>
 
       <div className='headerPageName'>
@@ -28,11 +29,13 @@ const AboutMe = () => (
       </div>
 
       <div id='starWarsIntro'>
+        <p className='backgroundDivTitles' data-aos="fade-up">Intro</p>
         <p>the star wars like floating text intro</p>
       </div>
 
       <div id='aboutMeIntro'>
         <div id='characterSheet'>
+        <p className='backgroundDivTitles' data-aos="fade-up">About Me</p>
           <div id='characterSheetImg'>
             <img id='characterImg' alt='' src={characterImg} />
           </div>
@@ -43,15 +46,20 @@ const AboutMe = () => (
             </p>
             <ul>
               <li>Name: Tim</li>
-              <li>Born: November 1996</li>
+              <li>Born: 1996</li>
               <li>Current living location: Heerhugowaard, Netherlands, Earth</li>
-              <li>Front-End skill:</li>
-              <li>Creativity:</li>
-              <li>3D modeling:</li>
-              <li>Google solutions:</li>
-              <li>Hand to hand combad:</li>
-              <li>streanght:</li>
+              <li>Strength: </li>
               <li>Weakness: </li>
+              <li>Front-End skill:</li>
+              <div className='skillsBar' id='skillDeveloper'/>
+              <li>3D modeling:</li>
+              <div className='skillsBar' id='skill3D'/>
+              <li>Creativity:</li>
+              <div className='skillsBar' id='skillCreativity'/>
+              <li>Google solutions:</li>
+              <div className='skillsBar' id='skillGoogle'/>
+              <li>Hand to hand combad:</li>
+              <div className='skillsBar' id='skillCombad'/>
             </ul>
           </div>
         </div>
@@ -59,6 +67,7 @@ const AboutMe = () => (
 
       <div id='mySoftwareSkillsContainer'>
         <p id='mySoftwareSkillsHeader'>
+          <p className='backgroundDivTitles' data-aos="fade-up">My Skills</p>
           My software skills include the following:
         </p>
         <div id='mySoftwareSkills'>
@@ -141,9 +150,10 @@ const AboutMe = () => (
           </div>
         </div>
       </div>
-      <h1>
-      <img className='wincDiploma' alt='' src={wincDiploma} />
-      </h1>
+        <div className='diplomaContainer'>
+          <p className='backgroundDivTitles' data-aos="fade-up">Diploma</p>
+          <img className='wincDiploma' alt='' src={wincDiploma} />
+        </div>
       <div id='aboutMeFooter'>
         <img class='headshot' alt='' src={headshot} />
         <p>
@@ -154,6 +164,6 @@ const AboutMe = () => (
       </div>
 
     </div>
-);
+)};
 
 export default AboutMe;
