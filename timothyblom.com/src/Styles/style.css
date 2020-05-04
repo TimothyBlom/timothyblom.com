@@ -570,7 +570,7 @@
 
 .sliderNav {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -638,10 +638,6 @@
 }
 
 #sliderRadioButton2:checked ~ #backgroundFirstSheet {
-  margin-left: -20%;
-}
-
-#sliderRadioButton2:checked ~ #firstSheet {
   margin-left: -20%;
 }
 
@@ -799,8 +795,8 @@ body {
   position: fixed;
   font-size: 35px;
   opacity: 0.5;
-  margin-top: -200px;
-  margin-left: 150px;
+  margin-top: -213px;
+  margin-left: 140px;
   height: 0px;
 }
 
@@ -855,6 +851,7 @@ body {
   padding-bottom: 40px;
   margin: 3% 0 0 0;
   font-size: 25px;
+  text-align: center;
 }
 
 .homeIconsContainer {
@@ -1010,7 +1007,7 @@ body {
 }
 
 .headshot {
-  width: 25%;
+  height: 500px;
   border-radius: 20%;
   margin: 20px 10% 20px 20px;
 }
@@ -1036,5 +1033,112 @@ body {
 .artSheet {
   width: 70%;
   margin: 5% 15% 5% 15%;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .backgroundDivTitles {
+    font-size: 100px;
+    margin-top: -25%;
+  }
+  .headerPageName {
+    font-size: 30px;
+    margin-top: -155px;
+    margin-left: 90px;
+    height: 0px;
+  }
+  .loadingIcon {
+    border: solid 1px white;
+    -webkit-box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
+            box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
+    -webkit-animation: animate-RGB 5s linear infinite;
+            animation: animate-RGB 5s linear infinite;
+    height: 40px;
+    display: block;
+    margin: -15px auto 0px auto;
+  }
+  .headerMainButtons {
+    margin: -15px;
+  }
+  #optionsButton {
+    margin-right: 20px;
+  }
+  #selectButton {
+    margin-left: 0px;
+  }
+  #navigationMenu {
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+  #OptionsMenu {
+    left: 5%;
+  }
+  .artSlider {
+    width: 95%;
+    bottom: 60px;
+  }
+  .artsliderContainer {
+    padding-bottom: 0;
+  }
+  #homeTextHeader {
+    font-size: 30px;
+  }
+  .homePageText {
+    padding: 50px 10px 50px 10px;
+    margin: 50px 5% 20px 5%;
+  }
+  #starWarsIntro {
+    height: 250px;
+    margin: 0 0 10% 0;
+  }
+  #aboutMeIntro {
+    padding: 20px 0px 20px 0px;
+    margin: 0;
+    background-color: red;
+  }
+  #characterImg {
+    height: 400px;
+    margin: 0px;
+    margin-top: 320px;
+  }
+  #characterSkills {
+    margin: 0 20px 0 20px;
+    font-size: 20px;
+  }
+  .skillsBar {
+    background-color: #747474;
+    width: 200px;
+    height: 25px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+  .backgroundDivTitles {
+    font-size: 200px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .backgroundDivTitles {
+    font-size: 200px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+  .backgroundDivTitles {
+    font-size: 200px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+  .backgroundDivTitles {
+    font-size: 200px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .backgroundDivTitles {
+    font-size: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

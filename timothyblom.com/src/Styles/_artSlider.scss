@@ -21,7 +21,7 @@
 
 .sliderNav {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -70,7 +70,6 @@
 
 .sliderArtSheet {
     width: 100%;
-    // height: 100%;
 }
 
 #sliderRadioButton1:checked ~ #firstSheet {
@@ -78,10 +77,6 @@
 }
 
 #sliderRadioButton2:checked ~ #backgroundFirstSheet {
-    margin-left: -20%;
-}
-
-#sliderRadioButton2:checked ~ #firstSheet {
     margin-left: -20%;
 }
 
@@ -96,19 +91,3 @@
 #sliderRadioButton5:checked ~ #firstSheet {
     margin-left: -80%;
 }
-
-
-
-// @keyframes blackWhite {  
-//     0% { margin-left: -0%; }
-//     20% { margin-left: -20%; }
-//     40% { margin-left: -40%; }
-//     60% { margin-left: -60%; }
-//     80% { margin-left: -80%; }
-//   }
-  
-// #firstSheet {
-//     animation-name: blackWhite;
-//     animation-iteration-count: infinite;
-//     animation-duration: 10s; 
-// }

@@ -22,26 +22,25 @@ const Home = () => (
         </p>
         <br />
         <p className='homeTextContent'>
-          I am Tim Blom, and this is my portfolio website. 
+          Hello, I am Tim Blom.
           <br />
-          Feel free to look arround, use the Navigation menu in the top left to go to other pages or play with the settings in the Options menu on the top right.
-          You can also use the social media buttons on the bottom right to visit my social media pages.
+          I am a Front-End Developer with a 3D Artist background, and this website is my portfolio.
+          I build this website to learn, to play with my new coding superpowers and to show what I can create.
+          Thank you for visiting my website, feel free to look arround and have fun.
         </p>
-        <p className='homeTextContent'>
-          Thank you for visiting my website. I build this website to learn, to play with my new coding superpowers and to show off what I can create. 
-        </p>
-        <p>
-          To do on this website:
-        </p>
-        <ul>
-          <li>options menu</li>
-          <li>visit other pages</li>
-          <li>find all gold bolts for a reward</li>
-          <li>visit my social media pages</li>
-        </ul>
-        <p>
-          
-        </p>
+        <div className='homeTextContent'>
+          <p>
+          Thank you for visiting my website.
+          </p>
+        <br />
+          <ul>
+            <li>options menu</li>
+            <li>visit other pages</li>
+            <li>find all gold bolts for a reward</li>
+            <li>visit my social media pages</li>
+          </ul>
+
+        </div>
       </div>
       <div className='homeFooter'>
         <p>
