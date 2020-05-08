@@ -40,7 +40,7 @@ const AboutMe = () => {
             <img id='characterImg' alt='' src={characterImg} />
           </div>
           <div id='characterSkills'>
-            <p>
+            <p id='characterSkillsHeader'>
               I am a Front End Developer and a 3D Artist. I live in the Netherlands in a little town called Heerhugowaard. 
               I spent most of my time playing video games, learning new code, making 3D art and coming up with new cool projects I never end up finishing.
             </p>

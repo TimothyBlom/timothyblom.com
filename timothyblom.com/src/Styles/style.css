@@ -637,7 +637,7 @@
   margin-left: 0%;
 }
 
-#sliderRadioButton2:checked ~ #backgroundFirstSheet {
+#sliderRadioButton2:checked ~ #firstSheet {
   margin-left: -20%;
 }
 
@@ -804,7 +804,7 @@ body {
   position: absolute;
   font-size: 300px;
   color: rgba(173, 173, 173, 0.151);
-  margin-top: -15%;
+  margin-top: -220px;
 }
 
 .introPage {
@@ -858,6 +858,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -871,6 +873,7 @@ body {
   padding: 0;
   margin: 20px;
   text-align: center;
+  font-size: 25px;
 }
 
 .programIcon {
@@ -970,10 +973,12 @@ body {
 }
 
 .mySoftwareSkillsIcons {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 40% 40% 40%;
-      grid-template-columns: 40% 40% 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
 }
 
 .homeIconDiv {
@@ -1037,8 +1042,8 @@ body {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .backgroundDivTitles {
-    font-size: 100px;
-    margin-top: -25%;
+    font-size: 20vw;
+    margin-top: -15%;
   }
   .headerPageName {
     font-size: 30px;
@@ -1072,6 +1077,9 @@ body {
   #OptionsMenu {
     left: 5%;
   }
+  .optionsButtonContainer {
+    width: 90%;
+  }
   .artSlider {
     width: 95%;
     bottom: 60px;
@@ -1086,29 +1094,100 @@ body {
     padding: 50px 10px 50px 10px;
     margin: 50px 5% 20px 5%;
   }
+  .programIcon {
+    width: 50px;
+    height: 50px;
+  }
+  .programIcon:hover {
+    width: 100px;
+    height: 100px;
+  }
+  .homeIconDiv {
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+  }
   #starWarsIntro {
     height: 250px;
-    margin: 0 0 10% 0;
+    margin: 0 0 50% 0;
   }
   #aboutMeIntro {
     padding: 20px 0px 20px 0px;
-    margin: 0;
-    background-color: red;
+    margin: 0 0 50% 0;
   }
   #characterImg {
     height: 400px;
     margin: 0px;
-    margin-top: 320px;
+    margin-top: 300px;
   }
   #characterSkills {
     margin: 0 20px 0 20px;
-    font-size: 20px;
+    font-size: 25px;
   }
   .skillsBar {
     background-color: #747474;
     width: 200px;
     height: 25px;
     margin-bottom: 10px;
+  }
+  #mySoftwareSkillsContainer {
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    background-color: rgba(43, 43, 43, 0.075);
+    -webkit-box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
+            box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
+    padding: 0;
+    margin: 0 0 50% 0;
+  }
+  #characterSkillsHeader {
+    margin-left: -65%;
+  }
+  #mySoftwareSkillsHeader {
+    font-size: 30px;
+  }
+  #mySoftwareSkills {
+    margin: 0;
+  }
+  #mySoftwareSkills {
+    display: inline;
+  }
+  #mySoftwareSkillsText {
+    width: 100%;
+    font-size: 25px;
+    padding: 0;
+  }
+  .mySoftwareSkillsIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .diplomaContainer {
+    margin: 0;
+  }
+  .wincDiploma {
+    width: 70%;
+    margin: 0 15% 50% 15%;
+  }
+  #aboutMeFooter {
+    font-size: 25px;
+    display: inline;
+  }
+  #aboutMeFooter p {
+    margin-right: 30px;
+  }
+  .headshot {
+    height: 300px;
+    margin: 0 40% 0 40px;
+  }
+  .artSheet {
+    width: 100%;
+    margin: 0 0 20% 0;
+  }
+  .artHeader {
+    margin: 0 0 20% 0;
   }
 }
 
