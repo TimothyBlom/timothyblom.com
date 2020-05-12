@@ -23,18 +23,23 @@
 }
 
 .optionsButtonContainer {
-    @include GlowBorder;
     margin: 30px auto 0px auto;
     width: 400px;
     padding: 5px;
         &:hover { 
-        background-color: rgba(128, 128, 128, 0.356);
+        color: rgba(128, 128, 128, 0.356);
         cursor: pointer;
             & .explainText {
                 opacity: 1;
                 @include TypingAnimation;
             }
         }
+}
+
+.optionsButtonUi {
+    width: 400px;
+    position: fixed;
+    margin: 0;
 }
 
 .optionsMenuButton {
@@ -45,7 +50,7 @@
 }
 
 .explainText {
-    margin: 0px 0 0px 5px;
+    margin: 20px 0 0 50px;
     font-size: 10px;
     opacity: 0;
 }

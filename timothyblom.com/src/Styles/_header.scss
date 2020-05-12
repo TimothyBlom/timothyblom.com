@@ -43,8 +43,13 @@
     margin-left: 40px;
 }
 
+.headerButtonUi {
+    width: 90px;
+    position: fixed;
+    margin: -95px 0 0 -40px;
+}
+
 .headerMainButtons {
-    @include GlowBorder;
     padding: 10px;
     display: inline;
     text-align: center;

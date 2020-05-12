@@ -2,7 +2,7 @@
 @import "./variables";
 @import "./mediaBars";
 @import "./optionsMenu";
-@import "./loadingIcon";
+@import "./websiteLogo";
 @import "./artSlider";
 @import "./scrollBar";
 @import "./background";
@@ -50,8 +50,15 @@ body {
     z-index: 2;
 }
 
-#introContinueButton {
+.introLogo {
+    width: 80%;
+    margin: 20% 10% 20% 10%;
+}
+
+.introContinueButton {
     text-align: center;
+    font-size: 25px;
+    margin: 0 auto 0 auto;
 }
 
 //Home Page

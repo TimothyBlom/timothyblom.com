@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import OptionsMenu from "./OptionsMenu"
-import LoadingIcon from "../Components/LoadingIcon"
+import WebsiteLogo from "../Components/WebsiteLogo"
+import mainButton from "../Images/UI/headerButton.png"
 
 export default class Header extends Component {
     state = {
@@ -31,14 +32,16 @@ export default class Header extends Component {
                 }
                 <div id='header'>
                     <div className='headerMainButtons' id='selectButton'>
-                        <button onClick={this.toggleSelect}/>
+                        <button />
                         <p>Select</p>
+                        <img className='headerButtonUi' alt='' src={mainButton} onClick={this.toggleSelect} />
                     </div>
                     <div className='headerMainButtons' id='optionsButton'>
-                        <button onClick={this.toggleOptions}/>
+                        <button />
                         <p>Options</p>
+                        <img className='headerButtonUi' alt='' src={mainButton} onClick={this.toggleOptions} />
                     </div>
-                    <LoadingIcon />
+                    <WebsiteLogo />
                     {this.state.Select &&
                         <div id='navigationMenu'>
                             <Link className='navLink' to='/Home'>Home Page</Link>
