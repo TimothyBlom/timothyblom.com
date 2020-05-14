@@ -1,9 +1,14 @@
 import React, {Component} from 'react';
-import Landstalker1 from "../Images/LandstalkerSheet1.png"
-import Landstalker2 from "../Images/LandstalkerSheet2.jpg"
-import Landstalker3 from "../Images/LandstalkerSheet3.jpg"
-import Tank1 from "../Images/TankSheet1.jpg"
-import Toolcrate1 from "../Images/ToolcrateSheet1.jpg"
+import artsliderUI from "../Images/UI/artsliderUi.png"
+import artslider1 from "../Images/Artslider/artsliderToolbox.png"
+import artslider2 from "../Images/Artslider/artsliderLandstalker.png"
+import artslider3 from "../Images/Artslider/artsliderPhone.png"
+import artslider4 from "../Images/Artslider/artsliderTank.png"
+import artsliderBackground1 from "../Images/Artslider/artsliderBackgroundToolbox.png"
+import artsliderBackground2 from "../Images/Artslider/artsliderBackgroundLandstalker.png"
+import artsliderBackground3 from "../Images/Artslider/artsliderBackgroundPhone.png"
+import artsliderBackground4 from "../Images/Artslider/artsliderBackgroundTank.png"
+
 
 export default class ArtSlider extends Component {
     render(){
@@ -13,22 +18,24 @@ export default class ArtSlider extends Component {
                 <div className='backgroundArtSlider'>
                     <div className='backgroundSlides'>
                         <div className='backgroundSliderArtSheetContainer' id='backgroundFirstSheet'>
-                            <img className='sliderArtSheet' alt='' src={Landstalker1} />
+                            <img className='sliderArtSheet' alt='' src={artsliderBackground1} />
                         </div>
                         <div className='backgroundSliderArtSheetContainer'>
-                            <img className='sliderArtSheet' alt='' src={Landstalker2} />
+                            <img className='sliderArtSheet' alt='' src={artsliderBackground2} />
                         </div>
                         <div className='backgroundSliderArtSheetContainer'>
-                            <img className='sliderArtSheet' alt='' src={Landstalker3} />
+                            <img className='sliderArtSheet' alt='' src={artsliderBackground3} />
                         </div>
                         <div className='backgroundSliderArtSheetContainer'>
-                            <img className='sliderArtSheet' alt='' src={Tank1} />
+                            <img className='sliderArtSheet' alt='' src={artsliderBackground4} />
                         </div>
                         <div className='backgroundSliderArtSheetContainer'>
-                            <img className='sliderArtSheet' alt='' src={Toolcrate1} />
+                            <img className='sliderArtSheet' alt='' src={artsliderBackground4} />
                         </div>
                     </div>
                 </div>
+
+                <img className='artsliderUi' alt='' src={artsliderUI} />
 
                 <div className='artSlider'>
                     <div className='slides'>
@@ -39,19 +46,19 @@ export default class ArtSlider extends Component {
                         <input type='radio' className='sliderRadioButtons' name='sliderRadioButton' id='sliderRadioButton5' />
 
                         <div className='sliderArtSheetContainer' id='firstSheet'>
-                            <img className='sliderArtSheet' alt='' src={Landstalker1} />
+                            <img className='sliderArtSheet' alt='' src={artslider1} />
                         </div>
                         <div className='sliderArtSheetContainer'>
-                            <img className='sliderArtSheet' alt='' src={Landstalker2} />
+                            <img className='sliderArtSheet' alt='' src={artslider2} />
                         </div>
                         <div className='sliderArtSheetContainer'>
-                            <img className='sliderArtSheet' alt='' src={Landstalker3} />
+                            <img className='sliderArtSheet' alt='' src={artslider3} />
                         </div>
                         <div className='sliderArtSheetContainer'>
-                            <img className='sliderArtSheet' alt='' src={Tank1} />
+                            <img className='sliderArtSheet' alt='' src={artslider4} />
                         </div>
                         <div className='sliderArtSheetContainer'>
-                            <img className='sliderArtSheet' alt='' src={Toolcrate1} />
+                            <img className='sliderArtSheet' alt='' src={artslider4} />
                         </div>
                     </div>
 

@@ -48,7 +48,13 @@ export default class Header extends Component {
                             <br />
                             <Link className='navLink' to='/AboutMe'>About Me</Link>
                             <br />
-                            <Link className='navLink' to='/dedicatedArt'>Dedicated Art</Link>
+                            <Link className='navLink' to='/Toolcrate'>Toolcrate</Link>
+                            <br />
+                            <Link className='navLink' to='/Landstalker'>Landstalker</Link>
+                            <br />
+                            <Link className='navLink' to='/Phone'>Phone</Link>
+                            <br />
+                            <Link className='navLink' to='/Tank'>Tank</Link>
                         </div>
                     }
                 </div>

@@ -4,6 +4,15 @@
     padding-bottom: 20%;
 }
 
+.artsliderUi {
+    position: absolute;
+    margin-top: -30px;
+    width: 68%;
+    // height: 62%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 .artSlider {
     width: 65%;
     overflow: hidden;

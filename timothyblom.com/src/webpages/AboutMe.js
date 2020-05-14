@@ -28,11 +28,6 @@ const AboutMe = () => {
         <p>About Me</p>
       </div>
 
-      <div id='starWarsIntro'>
-        <p className='backgroundDivTitles' data-aos="fade-up">Intro</p>
-        <p>the star wars like floating text intro</p>
-      </div>
-
       <div id='aboutMeIntro'>
         <div id='characterSheet'>
         <p className='backgroundDivTitles' data-aos="fade-up">About Me</p>

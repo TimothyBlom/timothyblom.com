@@ -37,6 +37,10 @@
     margin-right: 60px;
 }
 
+#optionsButton img {
+    transform: scaleX(-1);
+}
+
 #selectButton {
     float: left;
     width: 60px;
