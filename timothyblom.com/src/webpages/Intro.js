@@ -1,9 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import introLogo from "../Images/LogoFull.png"
+import IntroLogo from "../Images/WebsiteLogo.png"
 
 const Intro = () => (
     <div className='introPage'>
+
+        <img className="introLogo" alt='' src={IntroLogo} />
 
         <p>Intro page</p>
 

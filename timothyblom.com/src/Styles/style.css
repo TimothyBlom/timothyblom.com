@@ -64,33 +64,53 @@
 }
 
 #navigationMenu {
-  border: solid 1px white;
-  -webkit-box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
-          box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
-  -webkit-animation: animate-RGB 5s linear infinite;
-          animation: animate-RGB 5s linear infinite;
   float: left;
-  margin-top: -5px;
+  margin-top: -22px;
+  margin-left: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 15px;
 }
 
-.navLink {
+.routingMenuUi {
+  z-index: -1;
+  width: 120px;
+  position: fixed;
+  margin-top: -23px;
+}
+
+#routingMenuUiR {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  float: right;
+  margin-left: 690px;
+}
+
+.navButton {
+  float: left;
+  width: 100px;
+  margin-left: 30px;
+}
+
+.navButtonText {
   text-decoration: none;
   color: white;
   text-align: center;
-  border-style: solid;
-  border-color: #0004ff;
   float: left;
   width: 100px;
-  margin: 5px;
-  border-radius: 10px;
 }
 
-.navLink:hover {
-  background: rgba(43, 43, 43, 0.432);
+.navButtonText:hover {
+  color: rgba(43, 43, 43, 0.432);
+}
+
+.routingButtonUi {
+  z-index: -1;
+  width: 120px;
+  position: fixed;
+  margin-left: -110px;
+  margin-top: -10px;
 }
 
 #optionsButton {
@@ -828,18 +848,31 @@ body {
   z-index: 2;
 }
 
+.introLogo {
+  height: 75px;
+  display: block;
+  top: 35px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  position: fixed;
+}
+
 #starWarsIntro {
   border: solid black 5px;
   width: 1280px;
   height: 720px;
   padding: 20px 50px 20px 50px;
-  margin: 0 auto 0 auto;
+  margin: 200px auto 0 auto;
 }
 
 .introContinueButton {
-  text-align: center;
   font-size: 25px;
-  margin: 0 auto 0 auto;
+  position: fixed;
+  bottom: 100px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
 }
 
 .homePageText {
@@ -933,11 +966,6 @@ body {
 #characterImg {
   height: 900px;
   margin-right: 100px;
-  border: solid 1px white;
-  -webkit-box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
-          box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
-  -webkit-animation: animate-RGB 5s linear infinite;
-          animation: animate-RGB 5s linear infinite;
 }
 
 #characterSkills {

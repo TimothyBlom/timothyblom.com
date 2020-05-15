@@ -22,24 +22,24 @@ const Home = () => (
         </p>
         <br />
         <p className='homeTextContent'>
-          Hello, I am Tim Blom.
+          Hi, I am Tim Blom.
           <br />
-          I am a Front-End Developer with a 3D Artist background, and this website is my portfolio.
-          I build this website to learn, to play with my new coding superpowers and to show what I can create.
-          Thank you for visiting my website, feel free to look arround and have fun.
+          I am a Front-End Developer and 3D Artist, and this website is my portfolio.
+          I build this website to learn, to play with my new coding superpowers and to create a place I can show my 3D art and coding skills.
         </p>
         <div className='homeTextContent'>
           <p>
-          Thank you for visiting my website.
+          Thank you for visiting my website, feel free to look around. This website is still under construction but 
+          I build a few fun features to play with:
           </p>
-        <br />
           <ul>
-            <li>options menu</li>
-            <li>visit other pages</li>
-            <li>find all gold bolts for a reward</li>
-            <li>visit my social media pages</li>
+            <li>The select menu on the top left to visit other pages</li>
+            <li>The 4 buttons on the bottom right to visit my social media pages</li>
+            <li>The options menu in the top right --MOST FUNCTIONS DO NOT YET WORK--</li>
+            <li>Gold bolts are hidden all over the website, find them to unlock a secret --NOT YET INPLEMENTED--</li>
           </ul>
-
+          <br />
+          <p>Go to the GitHub repository of this website by clicking here:</p>
         </div>
       </div>
       <div className='homeFooter'>

@@ -145,11 +145,14 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-        <div className='diplomaContainer'>
-          <p className='backgroundDivTitles' data-aos="fade-up">Diploma</p>
-          <img className='wincDiploma' alt='' src={wincDiploma} />
-        </div>
+
+      <div className='diplomaContainer'>
+        <p className='backgroundDivTitles' data-aos="fade-up">Diploma</p>
+        <img className='wincDiploma' alt='' src={wincDiploma} />
+      </div>
+
       <div id='aboutMeFooter'>
+        <p className='backgroundDivTitles' data-aos="fade-up">Hire Me</p>
         <img class='headshot' alt='' src={headshot} />
         <p>
           I am always interted in new upertunities and meeting new people, currently I am looking for a fulltime job as Frond End Developer. 
