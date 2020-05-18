@@ -53,28 +53,28 @@ const AboutMe = () => {
 
               <li>
                 <a>Front-End skill:</a>
-                <p className='skillsProcentage' id='skill1'>70%</p>
+                <p className='skillsProcentage'>70%</p>
                 <br />
                 <img alt='' src={skillsBarUi} />
               </li>
 
               <li>
                 <a>3D modeling skills:</a>
-                <p className='skillsProcentage' id='skill1'>70%</p>
+                <p className='skillsProcentage'>70%</p>
                 <br />
                 <img alt='' src={skillsBarUi} />
               </li>
 
-              <li>
+              <li className='lastSkills'>
                 <a>Creativity:</a>
-                <p className='skillsProcentage' id='skill1'>80%</p>
+                <p className='skillsProcentage'>80%</p>
                 <br />
                 <img alt='' src={skillsBarUi} />
               </li>
 
-              <li>
+              <li className='lastSkills'>
                 <a>Googling solutions:</a>
-                <p className='skillsProcentage' id='skill1'>110%</p>
+                <p className='skillsProcentage'>110%</p>
                 <br />
                 <img alt='' src={skillsBarUi} />
               </li>

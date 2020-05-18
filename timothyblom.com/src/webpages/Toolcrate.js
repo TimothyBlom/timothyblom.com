@@ -13,19 +13,19 @@ const Toolcrate = () => (
       <div className='headerPageName'>
         <p>3D Toolcrate</p>
       </div>
-      <div class='artHeader'>
-        <img class='headerArtSheet' alt='' src={Toolcrate3D} />
+      <div className='artHeader'>
+        <img className='headerArtSheet' alt='' src={Toolcrate3D} />
         <p className='artHeaderDescription'>
           A Sci-Fi toolcrate of my own design
         </p>
       </div>
-      <img class='artSheet' alt='' src={Toolcrate1} />
-      <img class='artSheet' alt='' src={Toolcrate2} />
-      <img class='artSheet' alt='' src={Toolcrate3} />
-      <img class='artSheet' alt='' src={Toolcrate4} />
-      <img class='artSheet' alt='' src={Toolcrate5} />
-      <img class='artSheet' alt='' src={Toolcrate6} />
-      <img class='artSheet' alt='' src={Toolcrate7} />
+      <img className='artSheet' alt='' src={Toolcrate1} />
+      <img className='artSheet' alt='' src={Toolcrate2} />
+      <img className='artSheet' alt='' src={Toolcrate3} />
+      <img className='artSheet' alt='' src={Toolcrate4} />
+      <img className='artSheet' alt='' src={Toolcrate5} />
+      <img className='artSheet' alt='' src={Toolcrate6} />
+      <img className='artSheet' alt='' src={Toolcrate7} />
     </div>
 );
 

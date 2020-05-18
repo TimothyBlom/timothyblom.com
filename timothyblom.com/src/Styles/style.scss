@@ -15,7 +15,6 @@
 body {
     background: linear-gradient(90deg, rgb(13, 47, 92) 0%, rgb(15, 15, 15) 100%);
     color: white;
-    background-size: 100%;
     margin: 200px 10px 0 10px;
     padding-bottom: 30px;
 }
@@ -324,18 +323,34 @@ body {
 
 
 
+
+
+
+
+
 @media (min-width: 0px) and (max-width: 480px) {
     .backgroundDivTitles {
         font-size: 20vw;
         margin-top: -15%;
     }
 
+    .WebsiteLogo {
+        height: 60px;
+        display: block;
+        margin: 0 0 -50px -20px;
+    }
+
+//intro
+    #starWarsIntro {
+        height: 250px;
+        margin: 0 0 50% 0;
+    }
+
 //header
     .headerPageName {
         font-size: 30px;
-        margin-top: -155px;
-        margin-left: 90px;
-        height: 0px;
+        margin-top: -215px;
+        margin-left: 80px;
     }
 
     .loadingIcon {
@@ -350,7 +365,7 @@ body {
     }
 
     #optionsButton {
-        margin-right: 20px;
+        margin-right: 35px;
     }
     
     #selectButton {
@@ -359,7 +374,7 @@ body {
 
     #navigationMenu {
         margin-left: 0px;
-        margin-top: 25px;
+        margin-top: 40px;
     }
 
     #OptionsMenu {
@@ -389,30 +404,26 @@ body {
         margin: 50px 5% 20px 5%;
     }
 
-    .programIcon {
-        width: 50px;
-        height: 50px;
-        &:hover {
-         width: 100px;
-         height: 100px;   
-        }
-    }
-
     .homeIconDiv {
         width: 50px;
         height: 50px;
         font-size: 15px;
+        margin: 20px;
+    }
+
+    .programIcon {
+        width: 50px;
+        height: 50px;
+        &:hover {
+         width: 75px;
+         height: 75px;   
+        }
     }
 
 //About Me
-    #starWarsIntro {
-        height: 250px;
-        margin: 0 0 50% 0;
-    }
-
     #aboutMeIntro {
         padding: 20px 0px 20px 0px;
-        margin: 0 0 50% 0;
+        margin: 0 0 5% 0;
     }
     
     #characterImg {
@@ -422,25 +433,50 @@ body {
     }
     
     #characterSkills {
-        margin: 0 20px 0 20px;
+        margin: 10px 0 0 0px;
         font-size: 25px;
     }
-    
-    .skillsBar {
-        background-color: rgb(87, 87, 87);
-        width: 200px;
-        height: 25px;
-        margin-bottom: 10px;
-    }
 
-    .skillBar {
-        width: 10px;
+    .lastSkills {
+        margin: 0px 0 0 -220px;
+    }
+    
+    .list img {
+        width: 200px;
+    }
+    
+    .skillsProcentage {
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 10px;
+        font-size: 15px;
     }
 
     #mySoftwareSkillsContainer {
-        @include divBackground; 
         padding: 0;
         margin: 0 0 50% 0;
+    }
+
+    .aboutMeIconDiv {
+        width: 70px;
+        height: 70px;
+        padding: 20px;
+        margin: 10px 0px 10px 0px;
+        text-align: center;
+        font-size: 10px;
+        & img {
+            width: 70px;
+            height: 70px;
+            margin: 0px;
+            transition-duration: 0.5s;
+            &:hover {
+             width: 100px;
+             height: 100px;   
+            }
+            &:hover + .iconName{
+                font-size: $FontSizeMedium;
+            }
+        }
     }
 
     #characterSkillsHeader {

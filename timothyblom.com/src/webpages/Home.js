@@ -22,10 +22,10 @@ const Home = () => (
         </p>
         <br />
         <p className='homeTextContent'>
-          Hi, I am Tim Blom.
+          Hi, I am Tim.
           <br />
-          I am a Front-End Developer and 3D Artist, and this website is my portfolio.
-          I build this website to learn, to play with my new coding superpowers and to create a place I can show my 3D art and coding skills.
+          I am a Junior Front-End Developer and 3D Artist, and this website is my portfolio.
+          I build this website to learn, to play with my new coding superpowers and to create a place I can show my coding skills and 3D art.
         </p>
         <div className='homeTextContent'>
           <p>

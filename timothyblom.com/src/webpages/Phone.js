@@ -9,15 +9,15 @@ const Phone = () => (
       <div className='headerPageName'>
         <p>3D Phone</p>
       </div>
-      <div class='artHeader'>
-        <img class='headerArtSheet' alt='' src={Phone3D} />
+      <div className='artHeader'>
+        <img className='headerArtSheet' alt='' src={Phone3D} />
         <p className='artHeaderDescription'>
           A phone of my own design, inspired by populair brands. This was just a fun practice project.
         </p>
       </div>
-      <img class='artSheet' alt='' src={Phone1} />
-      <img class='artSheet' alt='' src={Phone2} />
-      <img class='artSheet' alt='' src={Phone3} />
+      <img className='artSheet' alt='' src={Phone1} />
+      <img className='artSheet' alt='' src={Phone2} />
+      <img className='artSheet' alt='' src={Phone3} />
     </div>
 );
 

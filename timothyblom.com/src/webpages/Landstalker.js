@@ -18,51 +18,51 @@ const Landstalker = () => (
       <div className='headerPageName'>
         <p>3D Landstalker</p>
       </div>
-      <div class='artHeader'>
-        <img class='headerArtSheet' alt='' src={Landstalker3D} />
+      <div className='artHeader'>
+        <img className='headerArtSheet' alt='' src={Landstalker3D} />
         <p className='artHeaderDescription'>
           The Landstalker is a playable vehigle in the Playstation 2 video game Ratchet Deadlocked, 
           I loved it and could not resist recreating it
         </p>
       </div>
 
-      <img class='artSheet' alt='' src={Landstalker1R} />
-      <img class='artSheet' alt='' src={Landstalker1B} />
+      <img className='artSheet' alt='' src={Landstalker1R} />
+      <img className='artSheet' alt='' src={Landstalker1B} />
       <div>
         <button>Red</button>
         <button>Blue</button>
       </div>
 
-      <img class='artSheet' alt='' src={Landstalker2R} />
-      <img class='artSheet' alt='' src={Landstalker2B} />
+      <img className='artSheet' alt='' src={Landstalker2R} />
+      <img className='artSheet' alt='' src={Landstalker2B} />
       <div>
         <button>Red</button>
         <button>Blue</button>
       </div>
 
-      <img class='artSheet' alt='' src={Landstalker3R} />
-      <img class='artSheet' alt='' src={Landstalker3B} />
+      <img className='artSheet' alt='' src={Landstalker3R} />
+      <img className='artSheet' alt='' src={Landstalker3B} />
       <div>
         <button>Red</button>
         <button>Blue</button>
       </div>
 
-      <img class='artSheet' alt='' src={Landstalker4R} />
-      <img class='artSheet' alt='' src={Landstalker4B} />
+      <img className='artSheet' alt='' src={Landstalker4R} />
+      <img className='artSheet' alt='' src={Landstalker4B} />
       <div>
         <button>Red</button>
         <button>Blue</button>
       </div>
 
-      <img class='artSheet' alt='' src={Landstalker5R} />
-      <img class='artSheet' alt='' src={Landstalker5B} />
+      <img className='artSheet' alt='' src={Landstalker5R} />
+      <img className='artSheet' alt='' src={Landstalker5B} />
       <div>
         <button>Red</button>
         <button>Blue</button>
       </div>
 
-      <img class='artSheet' alt='' src={Landstalker6R} />
-      <img class='artSheet' alt='' src={Landstalker6B} />
+      <img className='artSheet' alt='' src={Landstalker6R} />
+      <img className='artSheet' alt='' src={Landstalker6B} />
       <div>
         <button>Red</button>
         <button>Blue</button>

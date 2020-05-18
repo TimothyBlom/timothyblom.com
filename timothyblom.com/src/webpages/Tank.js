@@ -10,15 +10,15 @@ const Tank = () => (
       <div className='headerPageName'>
         <p>3D Tank</p>
       </div>
-      <div class='artHeader'>
-        <img class='headerArtSheet' alt='' src={Tank3D} />
+      <div className='artHeader'>
+        <img className='headerArtSheet' alt='' src={Tank3D} />
         <p className='artHeaderDescription'>
           The Leopard 2 bridge layer tank, a project of mine while I interned at the simulation department of the dutch military.
         </p>
       </div>
-      <img class='artSheet' alt='' src={Tank1} />
-      <img class='artSheet' alt='' src={Tank2} />
-      <img class='artSheet' alt='' src={Tank3} />
+      <img className='artSheet' alt='' src={Tank1} />
+      <img className='artSheet' alt='' src={Tank2} />
+      <img className='artSheet' alt='' src={Tank3} />
     </div>
 );
 
