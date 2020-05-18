@@ -23,7 +23,7 @@
 }
 
 .optionsButtonContainer {
-    margin: 30px auto 0px auto;
+    margin: 10px auto 0px auto;
     width: 400px;
     padding: 5px;
         &:hover { 
@@ -50,7 +50,7 @@
 }
 
 .explainText {
-    margin: 20px 0 0 50px;
+    margin: 25px 0 0 50px;
     font-size: 10px;
     opacity: 0;
 }
@@ -103,28 +103,30 @@
     margin-top: 75px;
 }
 
-.endCreditsButton {
-    @include GlowBorder;
+.creditsButton {
     padding: 10px;
     position: fixed;
-    right: 5%;
     bottom: 5%;
+    width: 100px;
+    text-align: center;
         &:hover {
-            background-color: rgba(131, 131, 131, 0.575);
+            color: rgba(131, 131, 131, 0.575);
             cursor: pointer;
         }
 }
 
+#endCreditsButton {
+    right: 10%;
+}
+
 #pauzeCreditsButton {
-    @include GlowBorder;
-    padding: 10px;
+    left: 10%;
+}
+
+.creditsButtonUi {
     position: fixed;
-    left: 5%;
-    bottom: 5%;
-        &:hover {
-            background-color: rgba(131, 131, 131, 0.575);
-            cursor: pointer;
-        }
+    width: 120px;
+    margin: -45px 0 0 -60px;
 }
 
 .creditTextMargin {

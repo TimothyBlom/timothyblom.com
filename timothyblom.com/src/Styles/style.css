@@ -65,12 +65,14 @@
 
 #navigationMenu {
   float: left;
-  margin-top: -22px;
-  margin-left: 5px;
+  margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 15px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 5px;
 }
 
 .routingMenuUi {
@@ -357,7 +359,7 @@
 }
 
 .optionsButtonContainer {
-  margin: 30px auto 0px auto;
+  margin: 10px auto 0px auto;
   width: 400px;
   padding: 5px;
 }
@@ -389,7 +391,7 @@
 }
 
 .explainText {
-  margin: 20px 0 0 50px;
+  margin: 25px 0 0 50px;
   font-size: 10px;
   opacity: 0;
 }
@@ -449,38 +451,31 @@
   margin-top: 75px;
 }
 
-.endCreditsButton {
-  border: solid 1px white;
-  -webkit-box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
-          box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
-  -webkit-animation: animate-RGB 5s linear infinite;
-          animation: animate-RGB 5s linear infinite;
+.creditsButton {
   padding: 10px;
   position: fixed;
-  right: 5%;
   bottom: 5%;
+  width: 100px;
+  text-align: center;
 }
 
-.endCreditsButton:hover {
-  background-color: rgba(131, 131, 131, 0.575);
+.creditsButton:hover {
+  color: rgba(131, 131, 131, 0.575);
   cursor: pointer;
+}
+
+#endCreditsButton {
+  right: 10%;
 }
 
 #pauzeCreditsButton {
-  border: solid 1px white;
-  -webkit-box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
-          box-shadow: 0px 0px 5px 2px #0ff, inset 0px 0px 5px 2px #0ff;
-  -webkit-animation: animate-RGB 5s linear infinite;
-          animation: animate-RGB 5s linear infinite;
-  padding: 10px;
-  position: fixed;
-  left: 5%;
-  bottom: 5%;
+  left: 10%;
 }
 
-#pauzeCreditsButton:hover {
-  background-color: rgba(131, 131, 131, 0.575);
-  cursor: pointer;
+.creditsButtonUi {
+  position: fixed;
+  width: 120px;
+  margin: -45px 0 0 -60px;
 }
 
 .creditTextMargin {
@@ -821,6 +816,15 @@ body {
   padding-bottom: 30px;
 }
 
+.list li {
+  list-style-type: none;
+  background: url("../Images/UI/sideBar.png") no-repeat left 5px;
+  background-size: 25px;
+  padding-left: 30px;
+  margin-top: 5px;
+  display: block;
+}
+
 .headerPageName {
   z-index: 1;
   position: fixed;
@@ -836,6 +840,7 @@ body {
   font-size: 300px;
   color: rgba(173, 173, 173, 0.151);
   margin-top: -220px;
+  z-index: -1;
 }
 
 .introPage {
@@ -924,8 +929,8 @@ body {
 .homeIconDiv {
   width: 150px;
   height: 150px;
-  padding: 0;
-  margin: 20px;
+  padding: 20;
+  margin: 10px;
   text-align: center;
   font-size: 25px;
 }
@@ -960,12 +965,13 @@ body {
   -webkit-box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
           box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
   padding: 20px 50px 20px 50px;
-  margin: 0 10% 20% 10%;
+  margin: 0 10% 10% 10%;
 }
 
 #characterImg {
-  height: 900px;
+  height: 1100px;
   margin-right: 100px;
+  margin-top: 50px;
 }
 
 #characterSkills {
@@ -973,11 +979,57 @@ body {
   font-size: 30px;
 }
 
-.skillsBar {
-  background-color: #747474;
-  width: 600px;
-  height: 25px;
-  margin-bottom: 10px;
+.list img {
+  width: 500px;
+}
+
+.skillsProcentage {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.aboutMeQuotes {
+  margin: 10% 5% 20% 5%;
+}
+
+.quoteContainer {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: rgba(43, 43, 43, 0.075);
+  -webkit-box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
+          box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
+  background-color: rgba(0, 140, 255, 0.151);
+  width: 700px;
+  margin-top: 50px;
+  padding: 50px 100px;
+  border-radius: 10px;
+}
+
+#quote2 {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.quoteText {
+  font-size: 40px;
+}
+
+.quotePerson {
+  font-style: oblique;
+  font-size: 30px;
+  text-align: end;
+}
+
+.quotePerson:before {
+  display: inline-block;
+  content: "";
+  border-top: 3px solid white;
+  width: 60px;
+  margin-right: 10px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 #characterSheet {
@@ -992,8 +1044,8 @@ body {
   background-color: rgba(43, 43, 43, 0.075);
   -webkit-box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
           box-shadow: 0 0 15px 15px rgba(43, 43, 43, 0.075);
-  padding: 20px 50px 40px 50px;
-  margin: 0 10% 20% 10%;
+  padding: 20px 10px 40px 10px;
+  margin: 0 5% 20% 10%;
 }
 
 #mySoftwareSkills {
@@ -1009,9 +1061,9 @@ body {
 }
 
 #mySoftwareSkillsText {
-  width: 35%;
+  width: 45%;
   font-size: 30px;
-  padding: 5%;
+  padding: 0%;
 }
 
 .mySoftwareSkillsIcons {
@@ -1023,9 +1075,30 @@ body {
   width: 50%;
 }
 
-.homeIconDiv {
+.aboutMeIconDiv {
+  width: 100px;
+  height: 100px;
   padding: 20px;
-  margin: 10px;
+  margin: 25px 10px 25px 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.aboutMeIconDiv img {
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.aboutMeIconDiv img:hover {
+  width: 125px;
+  height: 125px;
+}
+
+.aboutMeIconDiv img:hover + .iconName {
+  font-size: 25px;
 }
 
 .diplomaContainer {
@@ -1080,6 +1153,8 @@ body {
 .artSheet {
   width: 70%;
   margin: 5% 15% 5% 15%;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -1167,10 +1242,13 @@ body {
     font-size: 25px;
   }
   .skillsBar {
-    background-color: #747474;
+    background-color: #575757;
     width: 200px;
     height: 25px;
     margin-bottom: 10px;
+  }
+  .skillBar {
+    width: 10px;
   }
   #mySoftwareSkillsContainer {
     -webkit-backdrop-filter: blur(5px);

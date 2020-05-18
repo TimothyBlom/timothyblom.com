@@ -1,5 +1,5 @@
 import React from 'react';
-import logoFull from "../Images/LogoFull2.png"
+import WebsiteLogo from "../Components/WebsiteLogo"
 import GithubLogo from "../Images/GithubLogo.png"
 import ArtstationLogo from "../Images/ArtstationLogo.png"
 import LinkedinLogo from "../Images/LinkedinLogo.png"
@@ -9,8 +9,8 @@ const MediaBars = () => {
     return (
         <div>
             <div className='logoFullButton'>
-                <img className='logoFull' alt='' src={logoFull} />
-                <p className='logoFullText' >-Click here to play the intro again (not yet inplemented)</p>
+                <WebsiteLogo />
+                <p className='logoFullText' >-Click here to play the intro again</p>
             </div>
             <div className='mediaBars'>
                 <ul className="social-media-container">

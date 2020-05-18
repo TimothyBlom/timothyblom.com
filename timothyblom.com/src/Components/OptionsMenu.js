@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import menuButton from "../Images/UI/optionsMenuButton.png";
+import creditsButton from "../Images/UI/routingMenuButton.png";
 
 export default class OptionsMenu extends Component {
     state = {
@@ -145,7 +146,7 @@ export default class OptionsMenu extends Component {
                     }
 
                     <div className='optionsButtonContainer' onClick={this.toggleFont}>
-                    <img className='optionsButtonUi' alt='' src={menuButton} />
+                        <img className='optionsButtonUi' alt='' src={menuButton} />
                         <p className='optionsMenuButton'>Font</p>
                         <p className='explainText'>Change the text font and size settings on this website</p>
                     </div>
@@ -154,7 +155,7 @@ export default class OptionsMenu extends Component {
                     }
 
                     <div className='optionsButtonContainer' onClick={this.toggleUI}>
-                    <img className='optionsButtonUi' alt='' src={menuButton} />
+                        <img className='optionsButtonUi' alt='' src={menuButton} />
                         <p className='optionsMenuButton'>UI</p>
                         <p className='explainText'>Change the User Interface style on this website</p>
                     </div>
@@ -163,7 +164,7 @@ export default class OptionsMenu extends Component {
                     }
 
                     <div className='optionsButtonContainer' onClick={this.toggleBackground}>
-                    <img className='optionsButtonUi' alt='' src={menuButton} />
+                        <img className='optionsButtonUi' alt='' src={menuButton} />
                         <p className='optionsMenuButton'>Background</p>
                         <p className='explainText'>Change the background on this website</p>
                     </div>
@@ -172,7 +173,7 @@ export default class OptionsMenu extends Component {
                     }
 
                     <div className='optionsButtonContainer' onClick={this.toggleGraphics}>
-                    <img className='optionsButtonUi' alt='' src={menuButton} />
+                        <img className='optionsButtonUi' alt='' src={menuButton} />
                         <p className='optionsMenuButton'>Graphics</p>
                         <p className='explainText'>Change the graphics settings on this website</p>
                     </div>
@@ -181,7 +182,7 @@ export default class OptionsMenu extends Component {
                     }
 
                     <div className='optionsButtonContainer' onClick={this.toggleCheatCodes}>
-                    <img className='optionsButtonUi' alt='' src={menuButton} />
+                        <img className='optionsButtonUi' alt='' src={menuButton} />
                         <p className='optionsMenuButton'>Cheat Codes</p>
                         <p className='explainText'>unlock cheat codes and use them</p>
                     </div>
@@ -190,7 +191,7 @@ export default class OptionsMenu extends Component {
                     }
 
                     <div className='optionsButtonContainer' onClick={this.toggleHelp}>
-                    <img className='optionsButtonUi' alt='' src={menuButton} />
+                        <img className='optionsButtonUi' alt='' src={menuButton} />
                         <p className='optionsMenuButton'>Help</p>
                         <p className='explainText'>Learn usefull tips about navigating this website</p>
                     </div>
@@ -199,7 +200,7 @@ export default class OptionsMenu extends Component {
                     }
 
                     <div className='optionsButtonContainer' onClick={this.toggleCredits}>
-                    <img className='optionsButtonUi' alt='' src={menuButton} />
+                        <img className='optionsButtonUi' alt='' src={menuButton} />
                         <p className='optionsMenuButton'>Credits</p>
                         <p className='explainText'>Play the credits</p>
                     </div>
@@ -238,12 +239,14 @@ export default class OptionsMenu extends Component {
                                     <p>To the whole team, for exceptional teamwork and only a few conflicts.</p>
                                 </div>
                             </div>
-                            <p className='endCreditsButton' onClick={this.toggleCredits}>
-                                End credits
-                            </p>
-                            <p id='pauzeCreditsButton'>
-                                pauze credits
-                            </p>
+                            <div className='creditsButton' id='endCreditsButton' onClick={this.toggleCredits}>
+                                <p> End credits </p>
+                                <img className='creditsButtonUi' alt='' src={creditsButton} />
+                            </div>
+                            <div className='creditsButton' id='pauzeCreditsButton'>
+                                <p> pauze credits </p>
+                                <img className='creditsButtonUi' alt='' src={creditsButton} />
+                            </div>
                         </div>
                     }
                 </div>

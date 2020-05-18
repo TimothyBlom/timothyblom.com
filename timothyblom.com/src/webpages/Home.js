@@ -32,7 +32,7 @@ const Home = () => (
           Thank you for visiting my website, feel free to look around. This website is still under construction but 
           I build a few fun features to play with:
           </p>
-          <ul>
+          <ul className='list'>
             <li>The select menu on the top left to visit other pages</li>
             <li>The 4 buttons on the bottom right to visit my social media pages</li>
             <li>The options menu in the top right --MOST FUNCTIONS DO NOT YET WORK--</li>

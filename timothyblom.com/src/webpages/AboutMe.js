@@ -19,6 +19,7 @@ import unityLogo from "../Images/unityLogo.png"
 import unrealEngine4Logo from "../Images/unrealEngine4Logo.png"
 import wincDiploma from "../Images/WincDiplomaTimothyBlom.png"
 import characterImg from "../Images/characterSheet.png"
+import skillsBarUi from "../Images/UI/skillBar.png"
 
 const AboutMe = () => {
     return(
@@ -31,40 +32,84 @@ const AboutMe = () => {
       <div id='aboutMeIntro'>
         <div id='characterSheet'>
         <p className='backgroundDivTitles' data-aos="fade-up">About Me</p>
+
           <div id='characterSheetImg'>
             <img id='characterImg' alt='' src={characterImg} />
           </div>
+
           <div id='characterSkills'>
             <p id='characterSkillsHeader'>
               I am a Front End Developer and a 3D Artist. I live in the Netherlands in a little town called Heerhugowaard. 
               I spent most of my time playing video games, learning new code, making 3D art and coming up with new cool projects I never end up finishing.
             </p>
-            <ul>
-              <li>Name: Tim</li>
+
+            <ul className='list'>
+              <li>Name: Timothy Blom</li>
+              <li>Alias: "Kracok", "Commander", "That guy"</li>
               <li>Born: 1996</li>
-              <li>Current living location: Heerhugowaard, Netherlands, Earth</li>
+              <li>Living location: Heerhugowaard, Netherlands, Earth</li>
               <li>Strength: </li>
               <li>Weakness: </li>
-              <li>Front-End skill:</li>
-              <div className='skillsBar' id='skillDeveloper'/>
-              <li>3D modeling:</li>
-              <div className='skillsBar' id='skill3D'/>
-              <li>Creativity:</li>
-              <div className='skillsBar' id='skillCreativity'/>
-              <li>Google solutions:</li>
-              <div className='skillsBar' id='skillGoogle'/>
-              <li>Hand to hand combad:</li>
-              <div className='skillsBar' id='skillCombad'/>
+
+              <li>
+                <a>Front-End skill:</a>
+                <p className='skillsProcentage' id='skill1'>70%</p>
+                <br />
+                <img alt='' src={skillsBarUi} />
+              </li>
+
+              <li>
+                <a>3D modeling skills:</a>
+                <p className='skillsProcentage' id='skill1'>70%</p>
+                <br />
+                <img alt='' src={skillsBarUi} />
+              </li>
+
+              <li>
+                <a>Creativity:</a>
+                <p className='skillsProcentage' id='skill1'>80%</p>
+                <br />
+                <img alt='' src={skillsBarUi} />
+              </li>
+
+              <li>
+                <a>Googling solutions:</a>
+                <p className='skillsProcentage' id='skill1'>110%</p>
+                <br />
+                <img alt='' src={skillsBarUi} />
+              </li>
             </ul>
           </div>
+
         </div>
       </div>
 
+      <div className='aboutMeQuotes'>
+
+        <div className='quoteContainer' id='quote1' data-aos="fade-right">
+          <p className='quoteText'>"bla bla bla quote about me and stuff"</p>
+          <p className='quotePerson'>somebody</p>
+        </div>
+
+        <div className='quoteContainer' id='quote2' data-aos="fade-left">
+          <p className='quoteText'>"bla bla bla quote about me and stuff"</p>
+          <p className='quotePerson'>somebody</p>
+        </div>
+
+        <div className='quoteContainer' id='quote3' data-aos="fade-right">
+          <p className='quoteText'>"bla bla bla quote about me and stuff"</p>
+          <p className='quotePerson'>somebody</p>
+        </div>
+
+      </div>
+
       <div id='mySoftwareSkillsContainer'>
-        <p id='mySoftwareSkillsHeader'>
+
+        <div id='mySoftwareSkillsHeader'>
           <p className='backgroundDivTitles' data-aos="fade-up">My Skills</p>
-          My software skills include the following:
-        </p>
+          <p> My software skills include the following: </p>
+        </div>
+
         <div id='mySoftwareSkills'>
           <div id='mySoftwareSkillsText'>
             <p>
@@ -72,73 +117,73 @@ const AboutMe = () => {
               I love creating stuff and making it look cool, and always try to learn new software to do that.
             </p>
           </div>
+
           <div className='mySoftwareSkillsIcons'>
-            <div className='homeIconDiv'>
+            <div className='aboutMeIconDiv'>
               <img className='programIcon' alt='' src={htmlLogo} />
               <p className='iconName'> HTML5 </p>
             </div>
-            <div className='homeIconDiv'>
+            <div className='aboutMeIconDiv'>
               <img className='programIcon' alt='' src={cssLogo} />
               <p className='iconName'> CSS3 </p>
             </div>
-            <div className='homeIconDiv'>
+            <div className='aboutMeIconDiv'>
               <img className='programIcon' alt='' src={javascriptLogo} />
               <p className='iconName'> Javascript </p>
             </div>
-            <div className='homeIconDiv'>
+            <div className='aboutMeIconDiv'>
               <img className='programIcon' alt='' src={pythonLogo} />
               <p className='iconName'> Python </p>
             </div>
-            <div className='homeIconDiv'>
+            <div className='aboutMeIconDiv'>
               <img className='programIcon' alt='' src={sassLogo} />
               <p className='iconName'> SASS </p>
             </div>
-            <div className='homeIconDiv'>
+            <div className='aboutMeIconDiv'>
               <img className='programIcon' alt='' src={reactLogo} />
               <p className='iconName'> Javascript React </p>
             </div>
-            <div className='homeIconDiv'>
+            <div className='aboutMeIconDiv'>
               <img className='programIcon' alt='' src={vscLogo} />
               <p className='iconName'> Visual Studio Code </p>
             </div>
-            <div className='homeIconDiv'>
+            <div className='aboutMeIconDiv'>
               <img className='programIcon' alt='' src={nodeLogo} />
               <p className='iconName'> Node.js </p>
             </div>
-            <div className='homeIconDiv'>
+            <div className='aboutMeIconDiv'>
               <img className='programIcon' alt='' src={githubLogo} />
               <p className='iconName'> Git (Hub) </p>
             </div>
-            <div className='homeIconDiv'>
+            <div className='aboutMeIconDiv'>
               <img className='programIcon' alt='' src={photoshopLogo} />
               <p className='iconName'> Photoshop </p>
             </div>
-            <div className='homeIconDiv'>
+            <div className='aboutMeIconDiv'>
               <img className='programIcon' alt='' src={illustratorLogo} />
               <p className='iconName'> Illustrator </p>
             </div>
-            {/* <hr /> */}
-            <div className='homeIconDiv'>
+            <div className='aboutMeIconDiv'>
               <img className='programIcon' alt='' src={dsMaxLogo} />
               <p className='iconName'> 3Ds Studio Max </p>
             </div>
-            <div className='homeIconDiv'>
+            <div className='aboutMeIconDiv'>
               <img className='programIcon' alt='' src={mayaLogo} />
               <p className='iconName'> Maya </p>
             </div>
-            <div className='homeIconDiv'>
+            <div className='aboutMeIconDiv'>
               <img className='programIcon' alt='' src={cinema4dLogo} />
               <p className='iconName'> Cinema 4D </p>
             </div>
-            <div className='homeIconDiv'>
+            <div className='aboutMeIconDiv'>
               <img className='programIcon' alt='' src={substancePainterLogo} />
               <p className='iconName'> Substance Painter </p>
             </div>
-            <div className='homeIconDiv'>
+            <div className='aboutMeIconDiv'>
               <img className='programIcon' alt='' src={unityLogo} />
               <p className='iconName'> Unity </p>
             </div>
-            <div className='homeIconDiv'>
+            <div className='aboutMeIconDiv'>
               <img className='programIcon' alt='' src={unrealEngine4Logo} />
               <p className='iconName'> Unreal Engine 4 </p>
             </div>
@@ -153,7 +198,7 @@ const AboutMe = () => {
 
       <div id='aboutMeFooter'>
         <p className='backgroundDivTitles' data-aos="fade-up">Hire Me</p>
-        <img class='headshot' alt='' src={headshot} />
+        <img className='headshot' alt='' src={headshot} />
         <p>
           I am always interted in new upertunities and meeting new people, currently I am looking for a fulltime job as Frond End Developer. 
           If you are interested in meeting me please contact me at tga.blom@gmail.com, 
