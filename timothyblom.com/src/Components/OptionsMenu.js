@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import menuButton from "../Images/UI/optionsMenuButton.png";
+import Credits from "./Credits"
 import creditsButton from "../Images/UI/routingMenuButton.png";
 
 export default class OptionsMenu extends Component {
@@ -9,7 +10,7 @@ export default class OptionsMenu extends Component {
         UI: false,
         Background: false,
         Graphics: false,
-        CheatCodes: this.state = false,
+        CheatCodes: false,
         Help: false,
         Credits: false,
     };
@@ -121,17 +122,6 @@ export default class OptionsMenu extends Component {
 
     render(){
 
-                            // pause button in credits function below, doesn't work
-
-        // const creditsPauzeButton = document.getElementById('pauzeCreditsButton'),
-        //     creditsText = document.getElementById('creditsTextContainer');
-
-        // creditsPauzeButton.onClick = function() {
-        //     creditsText.classList.toggle('paused');
-        // };
-
-        // console.log('pauze button', creditsPauzeButton, creditsText)
-
         return (
             <div>
             <div id="blurBackground" />
@@ -142,7 +132,13 @@ export default class OptionsMenu extends Component {
                         <p className='explainText'>Change the language on this website</p>
                     </div>
                     {this.state.Language &&
-                        <p>test language</p>
+                        <div>
+                            <p>Choose a language for this website</p>
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+                                <label for="vehicle1"> Nederlands (Dutch) </label>
+                                <input type="checkbox" id="vehicle2" name="vehicle1" value="Bike" />
+                                <label for="vehicle2"> English </label>
+                        </div>
                     }
 
                     <div className='optionsButtonContainer' onClick={this.toggleFont}>
@@ -205,46 +201,11 @@ export default class OptionsMenu extends Component {
                         <p className='explainText'>Play the credits</p>
                     </div>
                     {this.state.Credits &&
-                        <div className='credits'>
-                            <div className='creditsTextContainer'>
-                                <p id='creditsHeader'>A Website created by:</p>
-                                <div id='creditsFunctionAndNames'>
-                                    <div id='creditsFunctions'>
-                                        <p className='creditTexts'>Front-End Developer</p>
-                                        <p className='creditTexts'>3D Artist</p>
-                                        <p className='creditTexts'>2D Artist</p>
-                                        <p className='creditTexts'>Designer</p>
-                                        <p className='creditTexts'>Animator</p>
-                                        <p className='creditTexts'>Director</p>
-                                        <p className='creditTexts'>Assistant one</p>
-                                        <p className='creditTexts'>Assistant two</p>
-                                    </div>
-                                    <div id='creditsNames'>
-                                        <p className='creditTexts'>Timothy Blom</p>
-                                        <p className='creditTexts'>Timothy Blom</p>
-                                        <p className='creditTexts'>Timothy Blom</p>
-                                        <p className='creditTexts'>Timothy Blom</p>
-                                        <p className='creditTexts'>Timothy Blom</p>
-                                        <p className='creditTexts'>Timothy Blom</p>
-                                        <p className='creditTexts'>Timothy Blom's mom</p>
-                                        <p className='creditTexts'>Timothy Blom's dad</p>
-                                    </div>
-                                </div>
-                                <p id='creditsFooterHeader'>Special thanks to:</p>
-                                <div id='creditFooter'>
-                                    <p>My teachers and classmates at Winc Academy.</p>
-                                    <p>My parents, for unwillingly taking the role of my assistants.</p>
-                                    <p>Everyone on Google, I would be hopelesslylost without it.</p>
-                                    <p>Video Games, for keeping me sane.</p>
-                                    <p>To the whole team, for exceptional teamwork and only a few conflicts.</p>
-                                </div>
-                            </div>
+                        <div>
+                            <Credits />
+{/* the div below should be in the Credits component but then the function does not work */}
                             <div className='creditsButton' id='endCreditsButton' onClick={this.toggleCredits}>
                                 <p> End credits </p>
-                                <img className='creditsButtonUi' alt='' src={creditsButton} />
-                            </div>
-                            <div className='creditsButton' id='pauzeCreditsButton'>
-                                <p> pauze credits </p>
                                 <img className='creditsButtonUi' alt='' src={creditsButton} />
                             </div>
                         </div>

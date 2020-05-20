@@ -46,20 +46,22 @@
     display: block;
     text-align: center;
     margin: 10px auto 0px auto;
-    font-size: 20px;
+    font-size: $FontSizeSmall;
 }
 
 .explainText {
     margin: 25px 0 0 50px;
-    font-size: 10px;
+    font-size: $FontSizeMini;
     opacity: 0;
 }
+
+
 
 //Credits
 .credits {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.781);
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(20px);
     left: 0;
     right: 0;
     top: 0;

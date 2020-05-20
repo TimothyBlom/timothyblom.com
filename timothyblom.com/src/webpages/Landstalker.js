@@ -12,6 +12,7 @@ import Landstalker5R from "../Images/Artsheets/landstalker5R.png"
 import Landstalker5B from "../Images/Artsheets/landstalker5B.png"
 import Landstalker6R from "../Images/Artsheets/landstalker6R.png"
 import Landstalker6B from "../Images/Artsheets/landstalker6B.png"
+import ButtonUi from "../Images/UI/routingMenuButton.png"
 
 const Landstalker = () => (
     <div>
@@ -28,9 +29,11 @@ const Landstalker = () => (
 
       <img className='artSheet' alt='' src={Landstalker1R} />
       <img className='artSheet' alt='' src={Landstalker1B} />
-      <div>
-        <button>Red</button>
-        <button>Blue</button>
+      <div className='landstalkerColorButtons'>
+        <p>Red</p>
+        <img className='artSheet' alt='' src={Landstalker1R} />
+        <p>Blue</p>
+        <img className='artSheet' alt='' src={Landstalker1R} />
       </div>
 
       <img className='artSheet' alt='' src={Landstalker2R} />

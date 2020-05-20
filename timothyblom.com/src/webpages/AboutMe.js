@@ -58,14 +58,14 @@ const AboutMe = () => {
                 <img alt='' src={skillsBarUi} />
               </li>
 
-              <li>
+              <li className='lastSkills'>
                 <a>3D modeling skills:</a>
                 <p className='skillsProcentage'>70%</p>
                 <br />
                 <img alt='' src={skillsBarUi} />
               </li>
 
-              <li className='lastSkills'>
+              <li>
                 <a>Creativity:</a>
                 <p className='skillsProcentage'>80%</p>
                 <br />
@@ -197,7 +197,7 @@ const AboutMe = () => {
       </div>
 
       <div id='aboutMeFooter'>
-        <p className='backgroundDivTitles' data-aos="fade-up">Hire Me</p>
+        <p className='backgroundDivTitles' data-aos="fade-up">My Story</p>
         <img className='headshot' alt='' src={headshot} />
         <p>
           I am always interted in new upertunities and meeting new people, currently I am looking for a fulltime job as Frond End Developer. 

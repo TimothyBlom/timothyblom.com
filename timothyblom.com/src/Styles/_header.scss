@@ -7,12 +7,20 @@
     z-index: 1;
 }
 
+.logoFull3 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 400px;
+    top: 20px;
+}
+
 #navigationMenu {
     float: left;
     margin-top: 70px;
     display: flex;
+    flex-wrap: wrap;
     font-size: 15px;
-    backdrop-filter: blur(5px);
     padding: 5px;
 }
 
@@ -21,19 +29,20 @@
     width: 120px;
     position: fixed;
     margin-top: -23px;
+    margin-left: -130px;
 }
 
 #routingMenuUiR {
     transform: scaleX(-1);
     float: right;
-    margin-left: 690px;
-    
+    margin-left: -90px; 
 }
 
 .navButton {
     float: left;
     width: 100px;
     margin-left: 30px;
+    margin-bottom: 50px;
 }
 
 .navButtonText {
@@ -42,6 +51,7 @@
     text-align: center;
     float: left;
     width: 100px;
+    backdrop-filter: blur(5px);
     &:hover {
         color: $ButtonBackground;
     }

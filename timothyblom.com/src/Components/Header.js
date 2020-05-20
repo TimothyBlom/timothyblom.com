@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import OptionsMenu from "./OptionsMenu"
+import LogoFull from "../Images/LogoFull2.png"
 import mainButton from "../Images/UI/headerButton.png"
 import routingButtonUi from "../Images/UI/routingMenuButton.png"
 import routingMenuUi from "../Images/UI/routingMenu.png"
@@ -28,9 +29,13 @@ export default class Header extends Component {
     render(){
         return (
             <div>
+
+                <img className='logoFull3' alt='' src={LogoFull} />
+
                 {this.state.Options &&
                     <OptionsMenu />
                 }
+
                 <div id='header'>
                     <div className='headerMainButtons' id='selectButton'>
                         <button />
@@ -42,12 +47,13 @@ export default class Header extends Component {
                         <p>Options</p>
                         <img className='headerButtonUi' alt='' src={mainButton} onClick={this.toggleOptions} />
                     </div>
+
                     {this.state.Select &&
                         <div id='navigationMenu'>
-                        <img className='routingMenuUi' id='routingMenuUiL' alt='' src={routingMenuUi} />
                             <div className='navButton'>
                                 <Link className='navButtonText' to='/Home'>Home</Link>
                                 <img className='routingButtonUi' alt='' src={routingButtonUi} />
+                                <img className='routingMenuUi' id='routingMenuUiL' alt='' src={routingMenuUi} />
                             </div>
                             <br />
                             <div className='navButton'>
@@ -73,10 +79,11 @@ export default class Header extends Component {
                             <div className='navButton'>
                                 <Link className='navButtonText' to='/Tank'>Tank</Link>
                                 <img className='routingButtonUi' alt='' src={routingButtonUi} />
+                                <img className='routingMenuUi' id='routingMenuUiR' alt='' src={routingMenuUi} />
                             </div>
-                            <img className='routingMenuUi' id='routingMenuUiR' alt='' src={routingMenuUi} />
                         </div>
                     }
+
                 </div>
             </div>
         )

@@ -31,7 +31,7 @@ body {
 .headerPageName {
     z-index: 1;
     position: fixed;
-    font-size: 35px;
+    font-size: $FontSizeHuge;
     opacity: 0.5;
     margin-top: -213px;
     margin-left: 140px;
@@ -44,6 +44,7 @@ body {
     color: rgba(173, 173, 173, 0.151);
     margin-top: -220px;
     z-index: -1;
+    text-align: center;
 }
 
 //Intro Page
@@ -71,15 +72,23 @@ body {
     width: 1280px;
     height: 720px;
     padding: 20px 50px 20px 50px;
-    margin: 200px auto 0 auto;
+    margin: 50px auto 0 auto;
 }
 
 .introContinueButton {
     font-size: 25px;
     position: fixed;
-    bottom: 100px;
+    bottom: 50px;
     transform: translateX(-50%);
     left: 50%;
+}
+
+.introContinueButtonUi {
+    z-index: -1;
+    width: 300px;
+    position: absolute;
+    margin: -5px 0 0 -200px;
+    
 }
 
 //Home Page
@@ -90,21 +99,21 @@ body {
 }
 
 #homeTextHeader {
-    font-size: 75px;
+    font-size: $FontSizeHeader;
     margin: 0;
     text-align: center;
 }
 
 .homeTextContent {
-    font-size: 25px;
+    font-size: $FontSizeMedium;
 }
 
 .homeFooter {
     @include divBackground; 
     padding: 10px;
     padding-bottom: 40px;
-    margin: 3% 0 0 0;
-    font-size: 25px;
+    margin: 5% 0 0 0;
+    font-size: $FontSizeMedium;
     text-align: center;
 }
 
@@ -120,15 +129,15 @@ body {
     width: 150px;
     height: 150px;
     padding: 20;
-    margin: 10px;
+    margin: 2%;
     text-align: center;
-    font-size: 25px;
+    font-size: $FontSizeMedium;
 }
 
 .programIcon {
     width: 100px;
     height: 100px;
-    margin: 0px;
+    margin: 0;
     transition-duration: 0.5s;
     &:hover {
      width: 150px;
@@ -160,6 +169,10 @@ body {
 #characterSkills {
     margin: 0 20px 0 20px;
     font-size: $FontSizeBig;
+}
+
+#characterSkillsHeader {
+    margin-top: -15px;
 }
 
 .list img {
@@ -249,13 +262,13 @@ body {
     text-align: center;
     font-size: 20px;
     & img {
-        width: 100px;
-        height: 100px;
+        width: 75px;
+        height: 75px;
         margin: 0px;
         transition-duration: 0.5s;
         &:hover {
-         width: 125px;
-         height: 125px;   
+         width: 100px;
+         height: 100px;   
         }
         &:hover + .iconName{
             font-size: $FontSizeMedium;
@@ -270,8 +283,8 @@ body {
 .wincDiploma {
     width: 40%;
     margin-left: 30%;
-    border: solid gold 5px;
-    box-shadow: 0px 0px 10px 5px rgb(255, 217, 0);
+    border: solid gold 2px;
+    box-shadow: 0px 0px 5px 2px rgb(255, 217, 0);
 }
 
 #aboutMeFooter {
@@ -308,6 +321,15 @@ body {
     transition-duration: 1s;
 }
 
+.landstalkerColorButtons {
+    margin-left: 30%;
+    display: flex;
+    & p {
+        margin: 20px;
+        font-size: $FontSizeSmall;
+    }
+}
+
 
 
 
@@ -332,12 +354,21 @@ body {
     .backgroundDivTitles {
         font-size: 20vw;
         margin-top: -15%;
+        width: 450px;
     }
 
     .WebsiteLogo {
         height: 60px;
         display: block;
         margin: 0 0 -50px -20px;
+    }
+
+    .logoFull3 {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width: 250px;
+        top: 20px;
     }
 
 //intro
@@ -349,8 +380,8 @@ body {
 //header
     .headerPageName {
         font-size: 30px;
-        margin-top: -215px;
-        margin-left: 80px;
+        margin-top: -165px;
+        margin-left: 100px;
     }
 
     .loadingIcon {
@@ -387,8 +418,15 @@ body {
 
 //Home
     .artSlider {
-        width: 95%;
+        width: 85%;
         bottom: 60px;
+    }
+
+    .artsliderUi {
+        margin-top: -70px;
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%);
     }
 
     .artsliderContainer {
@@ -422,7 +460,7 @@ body {
 
 //About Me
     #aboutMeIntro {
-        padding: 20px 0px 20px 0px;
+        padding: 0px 0px 20px 0px;
         margin: 0 0 5% 0;
     }
     
@@ -438,7 +476,7 @@ body {
     }
 
     .lastSkills {
-        margin: 0px 0 0 -220px;
+        margin-left: -200px;
     }
     
     .list img {
@@ -452,9 +490,23 @@ body {
         font-size: 15px;
     }
 
+    .quoteContainer {
+        width: 300px;
+        margin-top: 100px;
+        padding: 5px 30px;
+    }
+    
+    .quoteText {
+        font-size: $FontSizeBig;
+    }
+    
+    .quotePerson {
+        font-size: $FontSizeMedium;
+    }
+
     #mySoftwareSkillsContainer {
         padding: 0;
-        margin: 0 0 50% 0;
+        margin: 40% 0 40% 0;
     }
 
     .aboutMeIconDiv {
@@ -526,7 +578,7 @@ body {
     
     .headshot {
         height: 300px;
-        margin: 0 40% 0 40px;
+        margin: 60px 40% 0 40px;
     }
 
     //dedicated art 
@@ -540,9 +592,260 @@ body {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 481px) and (max-width: 600px) {
     .backgroundDivTitles {
-        font-size: 200px;
+        font-size: 20vw;
+        margin-top: -15%;
+        width: 450px;
+    }
+
+    .WebsiteLogo {
+        height: 60px;
+        display: block;
+        margin: 0 0 -50px -20px;
+    }
+
+    .logoFull3 {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width: 250px;
+        top: 20px;
+    }
+
+//intro
+    #starWarsIntro {
+        height: 250px;
+        margin: 0 0 50% 0;
+    }
+
+//header
+    .headerPageName {
+        font-size: 30px;
+        margin-top: -165px;
+        margin-left: 100px;
+    }
+
+    .loadingIcon {
+        @include GlowBorder;
+        height: 40px;
+        display: block;
+        margin: -15px auto 0px auto;
+    }
+
+    .headerMainButtons {
+        margin: -15px;
+    }
+
+    #optionsButton {
+        margin-right: 35px;
+    }
+    
+    #selectButton {
+        margin-left: 0px;
+    }
+
+    #navigationMenu {
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+
+    #OptionsMenu {
+        left: 5%;
+    }
+
+    .optionsButtonContainer {
+        width: 90%;
+    }
+
+//Home
+    .artSlider {
+        width: 85%;
+        bottom: 60px;
+    }
+
+    .artsliderUi {
+        margin-top: -70px;
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .artsliderContainer {
+        padding-bottom: 0;
+    }
+
+    #homeTextHeader {
+        font-size: 30px;
+    }
+
+    .homePageText {
+        padding: 50px 10px 50px 10px;
+        margin: 50px 5% 20px 5%;
+    }
+
+    .homeIconDiv {
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+        margin: 20px;
+    }
+
+    .programIcon {
+        width: 50px;
+        height: 50px;
+        &:hover {
+         width: 75px;
+         height: 75px;   
+        }
+    }
+
+//About Me
+    #aboutMeIntro {
+        padding: 0px 0px 20px 0px;
+        margin: 0 0 5% 0;
+    }
+    
+    #characterImg {
+        height: 400px;
+        margin: 0px;
+        margin-top: 300px;
+    }
+    
+    #characterSkills {
+        margin: 10px 0 0 0px;
+        font-size: 25px;
+    }
+
+    .lastSkills {
+        margin-left: -200px;
+    }
+    
+    .list img {
+        width: 200px;
+    }
+    
+    .skillsProcentage {
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .quoteContainer {
+        width: 300px;
+        margin-top: 100px;
+        padding: 5px 30px;
+    }
+    
+    .quoteText {
+        font-size: $FontSizeBig;
+    }
+    
+    .quotePerson {
+        font-size: $FontSizeMedium;
+    }
+
+    #mySoftwareSkillsContainer {
+        padding: 0;
+        margin: 40% 0 40% 0;
+    }
+
+    .aboutMeIconDiv {
+        width: 70px;
+        height: 70px;
+        padding: 20px;
+        margin: 10px 0px 10px 0px;
+        text-align: center;
+        font-size: 10px;
+        & img {
+            width: 70px;
+            height: 70px;
+            margin: 0px;
+            transition-duration: 0.5s;
+            &:hover {
+             width: 100px;
+             height: 100px;   
+            }
+            &:hover + .iconName{
+                font-size: $FontSizeMedium;
+            }
+        }
+    }
+
+    #characterSkillsHeader {
+        margin-left: -65%;
+    }
+
+    #mySoftwareSkillsHeader {
+        font-size: 30px;
+    }
+
+    #mySoftwareSkills {
+        margin: 0;
+    }
+
+    #mySoftwareSkills {
+        display: inline;
+    }
+
+    #mySoftwareSkillsText {
+        width: 100%;
+        font-size: 25px;
+        padding: 0;
+    }
+
+    .mySoftwareSkillsIcons {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .diplomaContainer {
+        margin: 0;
+    }
+    
+    .wincDiploma {
+        width: 70%;
+        margin: 0 15% 50% 15%;
+    }
+
+    #aboutMeFooter {
+        font-size: 25px;
+        display: inline;
+        & p {
+            margin-right: 30px;
+        }
+    }
+    
+    .headshot {
+        height: 300px;
+        margin: 60px 40% 0 40px;
+    }
+
+    //dedicated art 
+    .artSheet {
+        width: 100%;
+        margin: 0 0 20% 0;
+    }
+
+    .artHeader {
+        margin: 0 0 20% 0;
     }
 }
 

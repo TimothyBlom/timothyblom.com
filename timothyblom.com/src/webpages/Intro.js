@@ -1,13 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import IntroLogo from "../Images/WebsiteLogo.png"
+import WebsiteLogo from "../Components/WebsiteLogo"
+import menuButton from "../Images/UI/optionsMenuButton.png";
 
 const Intro = () => (
     <div className='introPage'>
-
-        <img className="introLogo" alt='' src={IntroLogo} />
-
-        <p>Intro page</p>
 
         <div id='starWarsIntro'>
             <p>the Ratchet and Clank and Star Wars like floating text intro</p>
@@ -15,7 +12,9 @@ const Intro = () => (
 
         <div className='introContinueButton'>
             <Link to='/Home'>Continue</Link>
+            <img className='introContinueButtonUi' alt='' src={menuButton} />
         </div>
+
     </div>
 );
 
