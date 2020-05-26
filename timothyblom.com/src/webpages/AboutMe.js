@@ -58,7 +58,7 @@ const AboutMe = () => {
                 <img alt='' src={skillsBarUi} />
               </li>
 
-              <li className='lastSkills'>
+              <li>
                 <a>3D modeling skills:</a>
                 <p className='skillsProcentage'>70%</p>
                 <br />
@@ -72,7 +72,7 @@ const AboutMe = () => {
                 <img alt='' src={skillsBarUi} />
               </li>
 
-              <li className='lastSkills'>
+              <li>
                 <a>Googling solutions:</a>
                 <p className='skillsProcentage'>110%</p>
                 <br />

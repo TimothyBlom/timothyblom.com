@@ -50,7 +50,7 @@
 .logoFullButton {
     z-index: 1;
     position: fixed;
-    bottom: 40px; 
+    bottom: 10px; 
     margin-left: 5px;
         &:hover > .logoFullText {
             opacity: 1;
@@ -59,7 +59,7 @@
 }
 
 .logoFull {
-    width: 200px;
+    width: 400px;
 }
 
 .logoFullText {

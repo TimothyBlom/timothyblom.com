@@ -29,46 +29,80 @@ const Landstalker = () => (
 
       <img className='artSheet' alt='' src={Landstalker1R} />
       <img className='artSheet' alt='' src={Landstalker1B} />
-      <div className='landstalkerColorButtons'>
-        <p>Red</p>
-        <img className='artSheet' alt='' src={Landstalker1R} />
-        <p>Blue</p>
-        <img className='artSheet' alt='' src={Landstalker1R} />
+      <div className='landstalkerColorButtonsContainer'>
+        <div className='landstalkerColorButton'>
+          <p>Red</p>
+          <img className='artSheet' alt='' src={ButtonUi} />
+        </div>
+        <div className='landstalkerColorButton'>
+          <p>Blue</p>
+          <img className='artSheet' alt='' src={ButtonUi} />
+        </div>
       </div>
 
       <img className='artSheet' alt='' src={Landstalker2R} />
       <img className='artSheet' alt='' src={Landstalker2B} />
-      <div>
-        <button>Red</button>
-        <button>Blue</button>
+      <div className='landstalkerColorButtonsContainer'>
+        <div className='landstalkerColorButton'>
+          <p>Red</p>
+          <img className='artSheet' alt='' src={ButtonUi} />
+        </div>
+        <div className='landstalkerColorButton'>
+          <p>Blue</p>
+          <img className='artSheet' alt='' src={ButtonUi} />
+        </div>
       </div>
 
       <img className='artSheet' alt='' src={Landstalker3R} />
       <img className='artSheet' alt='' src={Landstalker3B} />
-      <div>
-        <button>Red</button>
-        <button>Blue</button>
+      <div className='landstalkerColorButtonsContainer'>
+        <div className='landstalkerColorButton'>
+          <p>Red</p>
+          <img className='artSheet' alt='' src={ButtonUi} />
+        </div>
+        <div className='landstalkerColorButton'>
+          <p>Blue</p>
+          <img className='artSheet' alt='' src={ButtonUi} />
+        </div>
       </div>
 
       <img className='artSheet' alt='' src={Landstalker4R} />
       <img className='artSheet' alt='' src={Landstalker4B} />
-      <div>
-        <button>Red</button>
-        <button>Blue</button>
+      <div className='landstalkerColorButtonsContainer'>
+        <div className='landstalkerColorButton'>
+          <p>Red</p>
+          <img className='artSheet' alt='' src={ButtonUi} />
+        </div>
+        <div className='landstalkerColorButton'>
+          <p>Blue</p>
+          <img className='artSheet' alt='' src={ButtonUi} />
+        </div>
       </div>
 
       <img className='artSheet' alt='' src={Landstalker5R} />
       <img className='artSheet' alt='' src={Landstalker5B} />
-      <div>
-        <button>Red</button>
-        <button>Blue</button>
+      <div className='landstalkerColorButtonsContainer'>
+        <div className='landstalkerColorButton'>
+          <p>Red</p>
+          <img className='artSheet' alt='' src={ButtonUi} />
+        </div>
+        <div className='landstalkerColorButton'>
+          <p>Blue</p>
+          <img className='artSheet' alt='' src={ButtonUi} />
+        </div>
       </div>
 
       <img className='artSheet' alt='' src={Landstalker6R} />
       <img className='artSheet' alt='' src={Landstalker6B} />
-      <div>
-        <button>Red</button>
-        <button>Blue</button>
+      <div className='landstalkerColorButtonsContainer'>
+        <div className='landstalkerColorButton'>
+          <p>Red</p>
+          <img className='artSheet' alt='' src={ButtonUi} />
+        </div>
+        <div className='landstalkerColorButton'>
+          <p>Blue</p>
+          <img className='artSheet' alt='' src={ButtonUi} />
+        </div>
       </div>
 
     </div>

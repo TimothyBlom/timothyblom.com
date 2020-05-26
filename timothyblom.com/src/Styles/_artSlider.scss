@@ -1,24 +1,25 @@
 @import "./variables";
 
 .artsliderContainer {
-    padding-bottom: 20%;
+    padding-bottom: 0;
 }
 
 .artsliderUi {
     position: absolute;
-    margin-top: -30px;
-    width: 68%;
+    margin-top: -70px;
+    width: 90%;
     // height: 62%;
     left: 50%;
     transform: translate(-50%);
 }
 
 .artSlider {
-    width: 65%;
+    width: 85%;
     overflow: hidden;
     position: relative;
     left: 50%;
     transform: translate(-50%);
+    bottom: 60px;
 }
 
 .backgroundArtSlider {

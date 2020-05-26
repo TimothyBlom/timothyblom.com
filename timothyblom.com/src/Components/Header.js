@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import OptionsMenu from "./OptionsMenu"
-import LogoFull from "../Images/LogoFull2.png"
+import Logo from "../Images/Logo3D.png"
 import mainButton from "../Images/UI/headerButton.png"
 import routingButtonUi from "../Images/UI/routingMenuButton.png"
 import routingMenuUi from "../Images/UI/routingMenu.png"
@@ -30,7 +30,7 @@ export default class Header extends Component {
         return (
             <div>
 
-                <img className='logoFull3' alt='' src={LogoFull} />
+                <img className='logoFull3' alt='' src={Logo} />
 
                 {this.state.Options &&
                     <OptionsMenu />
@@ -62,22 +62,22 @@ export default class Header extends Component {
                             </div>
                             <br />
                             <div className='navButton'>
-                                <Link className='navButtonText' to='/Toolcrate'>Toolcrate</Link>
+                                <Link className='navButtonText' to='/Toolcrate'>3D Toolcrate</Link>
                                 <img className='routingButtonUi' alt='' src={routingButtonUi} />
                             </div>
                             <br />
                             <div className='navButton'>
-                                <Link className='navButtonText' to='/Landstalker'>Landstalker</Link>
+                                <Link className='navButtonText' to='/Landstalker'>3D Landstalker</Link>
                                 <img className='routingButtonUi' alt='' src={routingButtonUi} />
                             </div>
                             <br />
                             <div className='navButton'>
-                                <Link className='navButtonText' to='/Phone'>Phone</Link>
+                                <Link className='navButtonText' to='/Phone'>3D Phone</Link>
                                 <img className='routingButtonUi' alt='' src={routingButtonUi} />
                             </div>
                             <br />
                             <div className='navButton'>
-                                <Link className='navButtonText' to='/Tank'>Tank</Link>
+                                <Link className='navButtonText' to='/Tank'>3D Tank</Link>
                                 <img className='routingButtonUi' alt='' src={routingButtonUi} />
                                 <img className='routingMenuUi' id='routingMenuUiR' alt='' src={routingMenuUi} />
                             </div>

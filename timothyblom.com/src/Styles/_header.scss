@@ -11,13 +11,14 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    width: 400px;
-    top: 20px;
+    width: 150px;
+    top: 0px;
 }
 
 #navigationMenu {
     float: left;
-    margin-top: 70px;
+    margin-left: 20px;
+    margin-top: 45px;
     display: flex;
     flex-wrap: wrap;
     font-size: 15px;
@@ -69,7 +70,7 @@
 #optionsButton {
     float: right;
     width: 60px;
-    margin-right: 60px;
+    margin-right: 35px;
 }
 
 #optionsButton img {
@@ -79,7 +80,7 @@
 #selectButton {
     float: left;
     width: 60px;
-    margin-left: 40px;
+    margin-left: 0px;
 }
 
 .headerButtonUi {
@@ -92,7 +93,7 @@
     padding: 10px;
     display: inline;
     text-align: center;
-    margin: 10px 10px 10px 10px;
+    margin: -15px;
     p {
         margin: 0;
     }
