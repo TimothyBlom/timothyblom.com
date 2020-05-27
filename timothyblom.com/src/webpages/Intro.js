@@ -1,13 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import WebsiteLogo from "../Components/WebsiteLogo"
+import Logo from "../Images/Logo3D.png"
 import menuButton from "../Images/UI/optionsMenuButton.png";
 
 const Intro = () => (
     <div className='introPage'>
 
         <div id='starWarsIntro'>
-            <p>the Ratchet and Clank and Star Wars like floating text intro</p>
+            <p>Here will come a Star Wars like intro, for now enjoy this static logo</p>
+            <img className='introLogo' alt='' src={Logo} />
         </div>
 
         <div className='introContinueButton'>
@@ -15,9 +16,7 @@ const Intro = () => (
             <img className='introContinueButtonUi' alt='' src={menuButton} />
         </div>
 
-        <div>
-            <p>This website is in ALPHA state and not yet done</p>
-        </div>
+            <p id='introWarning'>This website is in ALPHA state and not yet done</p>
 
     </div>
 );

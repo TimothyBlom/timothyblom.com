@@ -900,6 +900,20 @@ body {
   margin: 50px auto 0 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  text-align: center;
+}
+
+.introLogo {
+  height: 80%;
+  position: absolute;
+}
+
+#introWarning {
+  text-align: center;
+  margin: 100px auto;
+  width: auto;
+  font-size: 8vw;
+  border: solid #fdeb1d;
 }
 
 .introContinueButton {
@@ -1638,6 +1652,9 @@ body {
   #starWarsIntro {
     width: 1000px;
     padding: 75px;
+  }
+  #introWarning {
+    font-size: 70px;
   }
   .webPages {
     width: 1600px;
