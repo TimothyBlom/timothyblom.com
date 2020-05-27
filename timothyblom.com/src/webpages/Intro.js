@@ -15,6 +15,10 @@ const Intro = () => (
             <img className='introContinueButtonUi' alt='' src={menuButton} />
         </div>
 
+        <div>
+            <p>This website is in ALPHA state and not yet done</p>
+        </div>
+
     </div>
 );
 

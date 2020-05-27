@@ -23,7 +23,7 @@ import skillsBarUi from "../Images/UI/skillBar.png"
 
 const AboutMe = () => {
     return(
-    <div>
+    <div className='webPages'>
 
       <div className='headerPageName'>
         <p>About Me</p>
@@ -31,7 +31,7 @@ const AboutMe = () => {
 
       <div id='aboutMeIntro'>
         <div id='characterSheet'>
-        <p className='backgroundDivTitles' data-aos="fade-up">About Me</p>
+        <p className='backgroundDivTitles' data-aos="fade-up">AboutMe</p>
 
           <div id='characterSheetImg'>
             <img id='characterImg' alt='' src={characterImg} />
@@ -106,7 +106,7 @@ const AboutMe = () => {
       <div id='mySoftwareSkillsContainer'>
 
         <div id='mySoftwareSkillsHeader'>
-          <p className='backgroundDivTitles' data-aos="fade-up">My Skills</p>
+          <p className='backgroundDivTitles' data-aos="fade-up">MySkills</p>
           <p> My software skills include the following: </p>
         </div>
 
@@ -197,7 +197,7 @@ const AboutMe = () => {
       </div>
 
       <div id='aboutMeFooter'>
-        <p className='backgroundDivTitles' data-aos="fade-up">My Story</p>
+        <p className='backgroundDivTitles' data-aos="fade-up">MyStory</p>
         <img className='headshot' alt='' src={headshot} />
         <p>
           I am always interted in new upertunities and meeting new people, currently I am looking for a fulltime job as Frond End Developer. 

@@ -6,7 +6,7 @@ import Tank3 from "../Images/Artsheets/tank3.png"
 
 
 const Tank = () => (
-    <div>
+    <div className='webPages'>
       <div className='headerPageName'>
         <p>3D Tank</p>
       </div>

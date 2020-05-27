@@ -37,15 +37,15 @@ export default class Header extends Component {
                 }
 
                 <div id='header'>
-                    <div className='headerMainButtons' id='selectButton'>
+                    <div className='headerMainButtons' id='selectButton' onClick={this.toggleSelect} >
                         <button />
                         <p>Select</p>
-                        <img className='headerButtonUi' alt='' src={mainButton} onClick={this.toggleSelect} />
+                        <img className='headerButtonUi' alt='' src={mainButton} />
                     </div>
-                    <div className='headerMainButtons' id='optionsButton'>
+                    <div className='headerMainButtons' id='optionsButton' onClick={this.toggleOptions}>
                         <button />
                         <p>Options</p>
-                        <img className='headerButtonUi' alt='' src={mainButton} onClick={this.toggleOptions} />
+                        <img className='headerButtonUi' alt='' src={mainButton} />
                     </div>
 
                     {this.state.Select &&

@@ -12,6 +12,9 @@ const MediaBars = () => {
                 <WebsiteLogo />
                 <p className='logoFullText' >-Click here to play the intro again</p>
             </div>
+            <div className='beta'>
+                <p>ALPHA V.2</p>
+            </div>
             <div className='mediaBars'>
                 <ul className="social-media-container">
                     <li className="socialMediaSingleBar" id='githubBar'>

@@ -9,7 +9,7 @@ import Toolcrate6 from "../Images/Artsheets/toolcrate6.png"
 import Toolcrate7 from "../Images/Artsheets/toolcrate7.png"
 
 const Toolcrate = () => (
-    <div>
+    <div className='webPages'>
       <div className='headerPageName'>
         <p>3D Toolcrate</p>
       </div>

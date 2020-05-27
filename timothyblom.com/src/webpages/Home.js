@@ -10,7 +10,7 @@ import githubLogo from "../Images/gitLogo.png"
 import Artslider from "../Components/ArtSlider"
 
 const Home = () => (
-    <div>
+    <div className='webPages'>
       <div className='headerPageName'>
         <p>Home</p>
       </div>
@@ -35,14 +35,14 @@ const Home = () => (
           <ul className='list'>
             <li>The select menu on the top left to visit other pages</li>
             <li>The 4 buttons on the bottom right to visit my social media pages</li>
-            <li>The options menu in the top right --MOST FUNCTIONS DO NOT YET WORK--</li>
-            <li>Gold bolts are hidden all over the website, find them to unlock a secret --NOT YET INPLEMENTED--</li>
+            <li>The options menu in the top right -MOST FUNCTIONS DO NOT YET WORK-</li>
           </ul>
-          <br />
-          <p>Go to the GitHub repository of this website by clicking here:</p>
         </div>
       </div>
       <div className='homeFooter'>
+        <p>
+          Go to the GitHub repository of this website by clicking here:
+        </p>
         <p>
             I build this website with the following programs:
         </p>

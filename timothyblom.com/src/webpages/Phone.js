@@ -5,7 +5,7 @@ import Phone2 from "../Images/Artsheets/phone2.png"
 import Phone3 from "../Images/Artsheets/phone3.png"
 
 const Phone = () => (
-    <div>
+    <div className='webPages'>
       <div className='headerPageName'>
         <p>3D Phone</p>
       </div>

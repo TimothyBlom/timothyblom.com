@@ -15,7 +15,7 @@ import Landstalker6B from "../Images/Artsheets/landstalker6B.png"
 import ButtonUi from "../Images/UI/routingMenuButton.png"
 
 const Landstalker = () => (
-    <div>
+    <div className='webPages'>
       <div className='headerPageName'>
         <p>3D Landstalker</p>
       </div>
