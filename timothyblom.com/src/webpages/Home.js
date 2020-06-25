@@ -41,7 +41,8 @@ const Home = () => (
       </div>
       <div className='homeFooter'>
         <p>
-          Go to the GitHub repository of this website by clicking here:
+          Go to the GitHub repository of this website by clicking 
+          <a href="https://github.com/kracok/timothyblom.com"> HERE</a>
         </p>
         <p>
             I build this website with the following programs:

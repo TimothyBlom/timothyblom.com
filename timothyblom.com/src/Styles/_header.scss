@@ -108,6 +108,7 @@
         box-shadow: 3px 3px #999999, inset -2px -2px 2px #313131, inset 2px 2px 2px #747474;
         &:hover {
             background-color: #2c2c2c;
+            cursor: pointer;
         }
         &:active {
             box-shadow: inset -2px -2px 2px #313131, inset 2px 2px 2px #747474;

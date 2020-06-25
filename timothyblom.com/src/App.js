@@ -11,6 +11,7 @@ import Toolcrate from './Webpages/Toolcrate';
 import Landstalker from './Webpages/Landstalker';
 import Phone from './Webpages/Phone';
 import Tank from './Webpages/Tank';
+import PSDisplay from './Webpages/PSDisplay';
 import MediaBars from "./Components/SocialmediaBars";
 import BackgroundLines from "./Components/BackgroundLines";
 import ScrollBar from "./Components/ScrollBar";
@@ -40,6 +41,7 @@ class App extends React.Component {
       <Route exact path='/Landstalker' component={Landstalker}/>
       <Route exact path='/Phone' component={Phone}/>
       <Route exact path='/Tank' component={Tank}/>
+      <Route exact path='/PSDisplay' component={PSDisplay}/>
     </BrowserRouter>
   )
 }

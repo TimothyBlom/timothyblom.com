@@ -177,6 +177,7 @@
 
 .headerMainButtons button:hover {
   background-color: #2c2c2c;
+  cursor: pointer;
 }
 
 .headerMainButtons button:active {
@@ -377,10 +378,23 @@
 #OptionsMenu {
   z-index: 1;
   position: fixed;
-  top: 15%;
-  left: 5%;
-  bottom: 10%;
-  right: 10%;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  top: 10%;
+  bottom: 5%;
+  width: 750px;
+  padding: 0 20px;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-box-shadow: 0px 3px 8px rgba(170, 170, 170, 0.397), inset 0px 2px 3px rgba(255, 255, 255, 0.404);
+          box-shadow: 0px 3px 8px rgba(170, 170, 170, 0.397), inset 0px 2px 3px rgba(255, 255, 255, 0.404);
+  border-radius: 10px;
+}
+
+#optionsmenubuttom {
+  content: '';
+  height: 300px;
 }
 
 .optionsButtonContainer {
@@ -421,7 +435,22 @@
   opacity: 0;
 }
 
+.optionsMenuTabUi {
+  height: 300px;
+  position: fixed;
+  margin-left: 0%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.optionsMenuTab {
+  text-align: center;
+  height: 350px;
+  padding: 20px;
+}
+
 .credits {
+  z-index: 1;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.781);
   -webkit-backdrop-filter: blur(20px);
@@ -477,6 +506,7 @@
 }
 
 .creditsButton {
+  z-index: 1;
   padding: 10px;
   position: fixed;
   bottom: 5%;
@@ -1538,7 +1568,8 @@ body {
   }
   .artsliderContainer {
     padding-top: 10%;
-    margin-bottom: 300px;
+    margin-bottom: 500px;
+    width: 1200px;
   }
   #homeTextHeader {
     font-size: 70px;
@@ -1702,6 +1733,7 @@ body {
   .artsliderContainer {
     padding-top: 10%;
     margin-bottom: 500px;
+    width: 1200px;
   }
   #homeTextHeader {
     font-size: 70px;

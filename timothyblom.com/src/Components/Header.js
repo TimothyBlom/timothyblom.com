@@ -26,6 +26,10 @@ export default class Header extends Component {
         });
     };
 
+    scrollTop = () => {
+        window.scrollTo(0, 0);
+    }
+
     render(){
         return (
             <div>
@@ -51,33 +55,38 @@ export default class Header extends Component {
                     {this.state.Select &&
                         <div id='navigationMenu'>
                             <div className='navButton'>
-                                <Link className='navButtonText' to='/Home'>Home</Link>
+                                <Link className='navButtonText' to='/Home' onClick={this.scrollTop}>Home</Link>
                                 <img className='routingButtonUi' alt='' src={routingButtonUi} />
                                 <img className='routingMenuUi' id='routingMenuUiL' alt='' src={routingMenuUi} />
                             </div>
                             <br />
                             <div className='navButton'>
-                                <Link className='navButtonText' to='/AboutMe'>About Me</Link>
+                                <Link className='navButtonText' to='/AboutMe' onClick={this.scrollTop}>About Me</Link>
                                 <img className='routingButtonUi' alt='' src={routingButtonUi} />
                             </div>
                             <br />
                             <div className='navButton'>
-                                <Link className='navButtonText' to='/Toolcrate'>3D Toolcrate</Link>
+                                <Link className='navButtonText' to='/PSDisplay' onClick={this.scrollTop}>PS Display</Link>
                                 <img className='routingButtonUi' alt='' src={routingButtonUi} />
                             </div>
                             <br />
                             <div className='navButton'>
-                                <Link className='navButtonText' to='/Landstalker'>3D Landstalker</Link>
+                                <Link className='navButtonText' to='/Toolcrate' onClick={this.scrollTop}>3D Toolcrate</Link>
                                 <img className='routingButtonUi' alt='' src={routingButtonUi} />
                             </div>
                             <br />
                             <div className='navButton'>
-                                <Link className='navButtonText' to='/Phone'>3D Phone</Link>
+                                <Link className='navButtonText' to='/Landstalker' onClick={this.scrollTop}>3D Landstalker</Link>
                                 <img className='routingButtonUi' alt='' src={routingButtonUi} />
                             </div>
                             <br />
                             <div className='navButton'>
-                                <Link className='navButtonText' to='/Tank'>3D Tank</Link>
+                                <Link className='navButtonText' to='/Phone' onClick={this.scrollTop}>3D Phone</Link>
+                                <img className='routingButtonUi' alt='' src={routingButtonUi} />
+                            </div>
+                            <br />
+                            <div className='navButton'>
+                                <Link className='navButtonText' to='/Tank' onClick={this.scrollTop}>3D Tank</Link>
                                 <img className='routingButtonUi' alt='' src={routingButtonUi} />
                                 <img className='routingMenuUi' id='routingMenuUiR' alt='' src={routingMenuUi} />
                             </div>

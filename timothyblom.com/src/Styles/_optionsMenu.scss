@@ -16,10 +16,21 @@
 #OptionsMenu {
     z-index: 1;
     position: fixed;
-    top: 15%;
-    left: 5%;
-    bottom: 10%;
-    right: 10%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    top: 10%;
+    bottom: 5%;
+    width: 750px;
+    padding: 0 20px;
+    overflow: hidden;
+    overflow-y: auto;
+    box-shadow: 0px 3px 8px rgba(170, 170, 170, 0.397), inset 0px 2px 3px rgba(255, 255, 255, 0.404);
+    border-radius: 10px;
+}
+
+#optionsmenubuttom {
+    content: '';
+    height: 300px;
 }
 
 .optionsButtonContainer {
@@ -55,10 +66,25 @@
     opacity: 0;
 }
 
+//Tab
+.optionsMenuTabUi {
+    height: 300px;
+    position: fixed;
+    margin-left: 0%;
+    transform: translate(-50%);
+}
+
+.optionsMenuTab {
+    text-align: center;
+    height: 350px;
+    padding: 20px;
+}
+
 
 
 //Credits
 .credits {
+    z-index: 1;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.781);
     backdrop-filter: blur(20px);
@@ -106,6 +132,7 @@
 }
 
 .creditsButton {
+    z-index: 1;
     padding: 10px;
     position: fixed;
     bottom: 5%;
