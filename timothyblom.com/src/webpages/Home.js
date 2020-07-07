@@ -11,10 +11,11 @@ import Artslider from "../Components/ArtSlider"
 
 const Home = () => (
     <div className='webPages'>
+
       <div className='headerPageName'>
         <p>Home</p>
       </div>
-      <Artslider />
+      
       <div className='homePageText'>
       <p className='backgroundDivTitles' data-aos="fade-up">Welcome</p>
         <p id='homeTextHeader'>
@@ -39,6 +40,7 @@ const Home = () => (
           </ul>
         </div>
       </div>
+      <Artslider />
       <div className='homeFooter'>
         <p>
           Go to the GitHub repository of this website by clicking 

@@ -4,6 +4,8 @@ import Credits from "./Credits"
 import creditsButton from "../Images/UI/routingMenuButton.png";
 import ScrollBar from "./ScrollBar";
 import artsliderUI from "../Images/UI/artsliderUi.png"
+import UIPreview from "../Images/UI/artsliderUi.png"
+import BackgroundPreview from "../Images/Background.jpg"
 
 export default class OptionsMenu extends Component {
     state = {
@@ -17,7 +19,7 @@ export default class OptionsMenu extends Component {
         Credits: false,
     };
 
-    //the toggle functions bellow are not very dry, there should be a shorter way
+//everything on here is not very dry, I'll find a shorter way later
     toggleLanguage = () => {
         this.setState({
             Language: !this.state.Language,
@@ -139,6 +141,8 @@ export default class OptionsMenu extends Component {
                             <div className='optionsMenuTab'>
                                 <img className='optionsMenuTabUi' alt='' src={artsliderUI} />
                                 <p>Choose a language for this website</p>
+                                <button>English</button>
+                                <button>Dutch</button>
                             </div>
                         }
 
@@ -151,6 +155,10 @@ export default class OptionsMenu extends Component {
                             <div className='optionsMenuTab'>
                             <img className='optionsMenuTabUi' alt='' src={artsliderUI} />
                             <p>Change font of this website</p>
+                            <button>"Standard"</button>
+                            <button>"alternate standard"</button>
+                            <button>Mass Effect</button>
+                            <button>Playstation</button>
                         </div>
                         }
 
@@ -163,6 +171,11 @@ export default class OptionsMenu extends Component {
                             <div className='optionsMenuTab'>
                             <img className='optionsMenuTabUi' alt='' src={artsliderUI} />
                             <p>Change the User Interface style on this website</p>
+                            <img className='optionsPreview' alt='' src={UIPreview} />
+                            <img className='optionsPreview' alt='' src={UIPreview} />
+                            <br />
+                            <img className='optionsPreview' alt='' src={UIPreview} />
+                            <img className='optionsPreview' alt='' src={UIPreview} />
                         </div>
                         }
 
@@ -175,6 +188,11 @@ export default class OptionsMenu extends Component {
                             <div className='optionsMenuTab'>
                             <img className='optionsMenuTabUi' alt='' src={artsliderUI} />
                             <p>Change the background on this website</p>
+                            <img className='optionsPreview' alt='' src={BackgroundPreview} />
+                            <img className='optionsPreview' alt='' src={BackgroundPreview} />
+                            <br />
+                            <img className='optionsPreview' alt='' src={BackgroundPreview} />
+                            <img className='optionsPreview' alt='' src={BackgroundPreview} />
                         </div>
                         }
 
@@ -187,6 +205,10 @@ export default class OptionsMenu extends Component {
                         <div className='optionsMenuTab'>
                             <img className='optionsMenuTabUi' alt='' src={artsliderUI} />
                             <p>Change the graphics settings on this website</p>
+                            <div className='graphicSettings'>
+                                <p>resolution slider</p>
+                                <p>special effects slider</p>
+                            </div>
                         </div>
                         }
 

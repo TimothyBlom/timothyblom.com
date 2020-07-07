@@ -70,13 +70,18 @@ body {
 }
 
 #starWarsIntro {
-    border: solid rgb(0, 0, 0) 5px;
     width: 80%;
     height: 500px;
     padding: 5%;
     margin: 50px auto 0 50%;
     transform: translateX(-50%);
     text-align: center;
+}
+
+.introText {
+    text-align: center;
+    font-size: $FontSizeHeader;
+    margin: 0;
 }
 
 .introLogo {
@@ -944,7 +949,7 @@ body {
     }
     
     .homePageText {
-        padding: 20px 0px 20px 0px;
+        padding: 200px 0px 20px 0px;
         margin: 100px 5% 20px 5%;
     }
     

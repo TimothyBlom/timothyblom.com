@@ -435,6 +435,11 @@
   opacity: 0;
 }
 
+.optionsPreview {
+  height: 100px;
+  margin: 5px 20px;
+}
+
 .optionsMenuTabUi {
   height: 300px;
   position: fixed;
@@ -923,7 +928,6 @@ body {
 }
 
 #starWarsIntro {
-  border: solid black 5px;
   width: 80%;
   height: 500px;
   padding: 5%;
@@ -931,6 +935,12 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   text-align: center;
+}
+
+.introText {
+  text-align: center;
+  font-size: 70px;
+  margin: 0;
 }
 
 .introLogo {
@@ -1739,7 +1749,7 @@ body {
     font-size: 70px;
   }
   .homePageText {
-    padding: 20px 0px 20px 0px;
+    padding: 200px 0px 20px 0px;
     margin: 100px 5% 20px 5%;
   }
   .homeIconDiv {
